@@ -1,0 +1,1513 @@
+DOCUMENT: Final Fantasy Mystic Quest - Story Chronology
+FORMAT: Plain text blocks per location, in game order
+FIELDS: LOCATION, ORDER, STORY_BEATS, PARTY_CHANGES, ENEMIES, BOSS, ITEMS, WEAPONS, ARMOR, SPELLS
+
+LOCATION: Hill of Destiny
+- ORDER: 1
+- STORY_BEATS:
+  - and fight - Behemoth.
+  - | EXP: 84 | Battle Strategy: This fight isn't hard. You only have|
+  - | =========== | you'll just start the battle over anyway, so don't |
+  - After you defeat Behemoth, another Quake will start. The cloaked figure
+  - destination on the map - Level Forest. So, enter the forest.
+- PARTY_CHANGES:
+  - will tell you to meet him in Level Forest. Hero leaves, automatically,
+- BOSS: Behemoth
+- SPELLS:
+  - Quake
+
+LOCATION: Level Forest
+- ORDER: 2
+- STORY_BEATS:
+  - wil ltell you to save the Crystal of Earth first, and then leave. This
+  - Well, head north, until you see a man in a blue robe. If you talk to him
+  - you'll find out the stone is blocking his path. Jump over him, and push
+  - Head left, and you can get 3 potions from the treasure chest. Head all
+  - the way to the right after getting the potion, and you'll leave Level
+- PARTY_CHANGES:
+  - wil ltell you to save the Crystal of Earth first, and then leave. This
+  - the way to the right after getting the potion, and you'll leave Level
+- ITEMS:
+  - Tree Wither
+  - Cure Potion(s)
+  - Tree Wither
+
+LOCATION: Foresta
+- ORDER: 3
+- STORY_BEATS:
+  - When you enter Foresta, head into the first tree home on the left. There
+  - Cure. Head to the north end of the town, and cross the bridge. On the
+  - After you get the cure spell, exit the house, and leave Foresta. Once
+  - on the world map, you have to go back to Level Forest. With Kaeli's
+  - help, you'll be able to go deeper into the forest.
+- PARTY_CHANGES:
+  - Kaeli joins your party!
+  - in it. After you get it, leave the house. The house on the right side
+  - After you get the cure spell, exit the house, and leave Foresta. Once
+  - on the world map, you have to go back to Level Forest. With Kaeli's
+- ITEMS:
+  - Cure [Spell]
+  - Cure Potion(s)
+  - Tree Wither
+- SPELLS:
+  - Cure
+  - Exit
+  - White
+
+LOCATION: Level Forest
+- ORDER: 4
+- STORY_BEATS:
+  - When you enter the forest with Kaeli in your party, she'll immediately
+  - cut down a tree with her axe, giving you access to more of the level.
+  - If you take out the two slimes on the left, you'll clear a path to a
+  - right, and you'll be able to advance forward.
+  - enemies in the area, you'll be at level 3, so don't worry. Also, make
+  - ready, approach the tree, and a Minotaur will poison Kaeli. Then, you'll
+  - enter combat!
+  - volunteer to get the elixer to save Kaili - He's told it's in the Sand
+  - You can access a Brownie and a chest with a Heal Potion by cutting down
+- PARTY_CHANGES:
+  - that look like this one restore when you leave the level - and you're
+  - cut trees down now! - and then, they'll leave.
+- ENEMIES:
+  - Brownie
+  - Slime
+- BOSS: Minotaur
+- ITEMS:
+  - Cure Potion(s)
+  - Heal Potion(s)
+  - Elixer
+- WEAPONS:
+  - Axe
+- SPELLS:
+  - Cure
+  - Exit
+  - Heal
+  - Life
+
+LOCATION: Battlefield
+- ORDER: 5
+- STORY_BEATS:
+  - battlefield. Like all future battelfields, it's optional. Fight 10 sets
+  - in your party (you'll get him in Sand Temple).
+- ENEMIES:
+  - Mad Plant
+  - Poison Toad
+
+LOCATION: Sand Temple
+- ORDER: 6
+- STORY_BEATS:
+  - second room, and check the one treasure chest there. You'll find it's
+- PARTY_CHANGES:
+  - After Tristam joins the party, exit the sand temple.
+- ITEMS:
+  - Elixer
+  - Elixer
+- SPELLS:
+  - Exit
+
+LOCATION: Battlefield
+- ORDER: 7
+- STORY_BEATS:
+  - Before heading to the Bone Dungeon, you really should head left from
+  - sand Temple, and clear out a battlefield. When you win, you'll pick up
+  - out, head to the Bone Dungeon.
+- ENEMIES:
+  - Poison Toad
+  - Basilisk
+  - Mad Tree
+- ARMOR:
+  - Charm
+
+LOCATION: Bone Dungeon
+- ORDER: 8
+- STORY_BEATS:
+  - way, or you could choose to fight the monsters on either the left or
+  - there's another passage of bones. Go through them, and head up the
+  - Before you head to the next room, backtrack a bit. Go into the water,
+  - The next room is loaded with enemies. You can fight them for the EXP if
+  - them up. Head north, and there is a single Skeleton, blocking a set of
+  - bones. Defeat the skeleton, and place the bombs, by the two rib bones(?)
+  - that you have access to. The whole set of bones will shatter! If you
+  - walk all the wya to the right, into the wall, you can enter a hidden
+  - Skeleton. If you defeat one, or both of them, you can access another
+  - chest with 10 Ninja Stars inside. Afterwards, head to the top of the
+  - screen. You'll find some moving sand pushing east, so you can't cross
+  - take care of him, head south, using the stairs to reach the next room.
+  - Ninja Stars in it. After picking up the items, head to the right, to the
+  - There's more moving sand, so you'll have to battle the enemies to get
+  - Head straight, down the bones, and into another room. A chest containing
+  - the Quake spell is here, and you'll want to pick it up! After getting
+  - it, leave the room, and fight the Minotaur Zomie thats on the right of
+  - the set of bones, you'll have one more set of teeth to bomb.
+  - Head into the next room, and make sure to heal, and cure any status
+  - ailiments, because you're about to fight a boss! Jump over the rock in
+  - the water, and you'll enter battle with Flamerus Rex!
+  - Tristam will show off a really cool weapon (that you'll get later in the
+  - You'll be doing this alone though, because Tristam takes off, at the
+  - exit of the room you fight Flamerus Rex in. When you are back on the
+  - world map, head back to Foresta. Kaeli still needs the elixer that you
+- PARTY_CHANGES:
+  - it, leave the room, and fight the Minotaur Zomie thats on the right of
+  - door in Focus Tower. Now, backtrack through the dungeon, and leave.
+  - You'll be doing this alone though, because Tristam takes off, at the
+- ENEMIES:
+  - Basilisk
+  - Sandworm
+  - Poison Toad
+  - Roc
+  - Skeleton
+  - Gorgon
+- BOSS: Flamerus Rex
+- ITEMS:
+  - Ninja Star(s)
+  - Cure Potion(s)
+  - Seed(s)
+  - Quake [Spell]
+  - Sand Coin
+  - Elixer
+  - Sand Coin
+  - Elixer
+- WEAPONS:
+  - Bomb
+- ARMOR:
+  - Steel Shield
+- SPELLS:
+  - Cure
+  - Exit
+  - Heal
+  - Life
+  - Quake
+
+LOCATION: Foresta
+- ORDER: 9
+- STORY_BEATS:
+  - Enter Kaeli's house, and go into th back room. You'll give Kaeli the
+- PARTY_CHANGES:
+  - leave Foresta, and go to Focus Tower.
+- ITEMS:
+  - Cure Potion(s)
+  - Elixer
+- WEAPONS:
+  - Axe
+
+LOCATION: Battlefield
+- ORDER: 10
+- ENEMIES:
+  - Sand Worm
+  - Minotaur Zombie
+
+LOCATION: Focus Tower
+- ORDER: 11
+- STORY_BEATS:
+  - upward. You'll meet your friend that cloaked man again, and he'll tell
+  - stairs, go left, and walk south. You'll see another treasure chest; This
+- PARTY_CHANGES:
+  - and he leaves without explaining it further.
+- ITEMS:
+  - Fire [Spell]
+  - Explosive(s)
+- SPELLS:
+  - Fire
+
+LOCATION: Battlefield
+- ORDER: 12
+- ENEMIES:
+  - Mintmint
+
+LOCATION: Libra Temple
+- ORDER: 13
+- STORY_BEATS:
+  - Walk forward, and you'll see a strange crest on the ground. You can't
+  - talk to the girl standing behind it. You'll find out that Aquaria has
+  - been frozen! More importantly though, you'll find out that this girl is
+- PARTY_CHANGES:
+  - And so, Phebe joins the party! You can leave the Libra Temple, after she
+- ITEMS:
+  - Explosive(s)
+
+LOCATION: Battlefield
+- ORDER: 14
+- STORY_BEATS:
+  - that off, you'll also win 300 GP!
+- ENEMIES:
+  - Giant Toad
+  - Mintmint
+
+LOCATION: Battlefield
+- ORDER: 15
+- STORY_BEATS:
+  - Aquaria. Before you enter this battlefield, make sure Phoebe and/or Hero
+  - have at least a few Black Magics left. You'll be facing a new type of
+  - enemy here, the Scorpion, and they are weak against Fire. Defeat 10 sets
+  - of enemies, and you'll be rewarded with a Magic Ring; An item that
+- ENEMIES:
+  - Giant Toad
+  - Scorpion
+  - Mintmint
+- ARMOR:
+  - Magic Ring
+- SPELLS:
+  - Fire
+
+LOCATION: Aquaria
+- ORDER: 16
+- STORY_BEATS:
+  - When you arrive in Aquaria, head all the way to the left, and into the
+  - him from the tunnel. To get that though, first you'll need the Libra
+  - restore your health - for 95 GP. It's best to just go back to Foresta,
+  - and heal for free instead. Also, you'll want to pick up a Steel Helm
+  - you're ready, leave Aquaria, and you'll be on your way to Wintry Cave.
+- PARTY_CHANGES:
+  - restore your health - for 95 GP. It's best to just go back to Foresta,
+  - you're ready, leave Aquaria, and you'll be on your way to Wintry Cave.
+- ITEMS:
+  - Heal Potion(s)
+  - Refresher(s)
+  - Steel Helm
+  - Cure Potion(s)
+- ARMOR:
+  - Steel Helm
+- SPELLS:
+  - Heal
+
+LOCATION: Battlefield
+- ORDER: 17
+- STORY_BEATS:
+  - of enemies you'll be facing in Wintry Cave. If you have any trouble, you
+  - should head back. and train some more, in the Bone Dungeon. Just north
+- ENEMIES:
+  - Scorpion
+  - Edgehog
+  - Giant Toad
+- SPELLS:
+  - Fire
+
+LOCATION: Wintry Cave
+- ORDER: 18
+- STORY_BEATS:
+  - out the scorpion on the right, and head in that direction. Keep going,
+  - top of them. A little farther to the left, is a Land Worm, defeat it,
+  - and head down the path it was blocking.
+  - Cat Claw, and switch her own weapon to the Bow and Arrows. Now you'll be
+  - some items. This next part is optional, but: Climb back up, head to the
+  - left, and fight a Centaur blocking the stairs, or go all the way down
+  - gain, head left, and fight a Scorpion. If you fight the Scorpion, climb
+  - behind the Centaur (so, you don't have to fight him.)
+  - three potions inside. Head back to the left, and bomb the barricaded
+  - to the left, as far as you can, and drop onto another platform. Defeat
+  - Climb the wall left of the Edgehog, and fight a Scorpion on the platform
+  - next room has an array of enemies. If you fight to the right, from the
+  - You start under a sheet of ice in the next room. Fight the enemies, so
+  - arrows.) On the center platform, you'll find the boss of this area.
+  - | Choke Up | magic. Stick with the above strategy, and you'll be |
+  - After you defeat Squidite, a chest will appear where he once stood.
+- PARTY_CHANGES:
+  - Cat Claw, and switch her own weapon to the Bow and Arrows. Now you'll be
+  - Now, back to the mandatory stuff. Leave the room, and climb the wall
+  - Inside, is the Libra Crest! Take the crest, and you're ready to leave
+- ENEMIES:
+  - Scorpion
+  - Edgehog
+  - Landworm
+  - Centaur
+  - Land Turtle
+  - Sparna
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Arrow(s)
+  - Cure Potion(s)
+  - Libra Crest
+- WEAPONS:
+  - Bomb
+  - Cat Claw
+- SPELLS:
+  - Exit
+  - Heal
+  - Thunder
+
+LOCATION: Battlefield
+- ORDER: 19
+- STORY_BEATS:
+  - clearing out 10 battles, you'll win 600 GP! When you're done, head back
+- ENEMIES:
+  - Desert Hag
+- SPELLS:
+  - Fire
+
+LOCATION: Libra Temple + Life Temple
+- ORDER: 20
+- STORY_BEATS:
+  - crest in the middle of the room. You'll be trasnported to the Life
+  - southern exit, to see where you are on the map.) You'll find out that
+  - the Healing Spring has dried up! Head through the door on the top of
+  - the crest, to transport back to Libra temple. Leave, and go back to
+- PARTY_CHANGES:
+  - and then leave. Check the chest for 3 potions, and then step back on
+  - the crest, to transport back to Libra temple. Leave, and go back to
+- ITEMS:
+  - Arrow(s)
+  - Cure Potion(s)
+- SPELLS:
+  - Exit
+  - Life
+
+LOCATION: Aquaria
+- ORDER: 21
+- STORY_BEATS:
+  - When you enter the area, you'll automatically move to the center
+  - town stays frozen. It looks like you have to head to the Ice Pyramid
+- ITEMS:
+  - Heal Potion(s)
+  - Refresher(s)
+  - Cure Potion(s)
+  - Explosive(s)
+
+LOCATION: Falls Basin
+- ORDER: 22
+- STORY_BEATS:
+  - which point, you should move right, and defeat the Lamia, to reach the
+  - space, so that it's between the two platforms. Turn around, and go back
+  - Take the stairs down, and defeat the Lamia, and push the second block
+  - platforms on the bottom of the screen) below this one. Finally, go back
+  - Head back to the stairs, on the platform in the lower right hand corner
+  - ice block, to the next platform. Go around the Snow Crab, and get the
+  - Heal Spell from the chest, and then go back to fight the crab.
+  - | | and you'll come out of the fight victorious. |
+  - After you defeat the Snoe Crab, Phoebe will give you another item. The
+  - Head out the door above, and you'll be on your way to the Ice Pyramid (
+- PARTY_CHANGES:
+  - space, so that it's between the two platforms. Turn around, and go back
+  - platforms on the bottom of the screen) below this one. Finally, go back
+  - fight. Leave the room, through the second door, and jump across the
+  - Heal Spell from the chest, and then go back to fight the crab.
+- ENEMIES:
+  - Desert Hag
+  - Lamia
+- BOSS: Snow Crab
+- ITEMS:
+  - Explosive(s)
+  - Blizzard [Spell]
+- SPELLS:
+  - Heal
+  - Thunder
+
+LOCATION: Battlefield
+- ORDER: 23
+- ENEMIES:
+  - Lamia
+  - Mage
+  - Desert Hag
+- SPELLS:
+  - Heal
+
+LOCATION: Ice Pyramid
+- ORDER: 24
+- STORY_BEATS:
+  - Go through the open door, and to the right. Head down to the wall, and
+  - farthest to the right; You'll fight a few enemies you can't see yet, but
+  - were on, to find a Desert Hag, and a chest of bombs. Get the bombs, and
+  - go back to the entrance of the pyramid.
+  - This time, head left, and head south from where you see a Desert Hag.
+  - to where the treasure chests are, and head north, from the path on the
+  - right. Fight the Desert Hag, and the Mage along this path, to reach a
+  - flight of stairs. Fight the Phanquid in the next room, to reach a chest
+  - full of Heal Potions. Head back down the stairs, when you're done, and
+  - Head north again, but this time take the path on the left. Follow it,
+  - and fight the Lamia at the end. There is a Desert Hag, and a Lamia on
+  - the right. Take the path with the Lamia, and you'll find a Mage blocking
+  - door. Head through it, to reach a chest with arrows inside. Head back
+  - Just after defeating the Desert Hag, take an immediate right, and fight
+  - another Lamia. Head down the path, and around the turn, to find another
+  - Mage blocking a set of stairs. At the top, head around, behind where the
+  - you access a chest of arrows. After picking them up, take out the Lamia
+  - on the left side of the room, and head down the path she blocked. Just
+  - flight of stairs. Defeat him, and continue up.
+  - Head to your right, and defeat the first two enemies, and begin heading
+  - downard at the turn. You can defeat the Freezer Crab, to get a treasure
+  - Defeat the second crab, and get more arrows from the chest, then jump
+  - over the chest. Fight the Gather, and keep going along the path. Hit
+  - Turn around, and go back to the stairs. This time head to your left, and
+  - fight your way past the array of enemies, to the bottom of the area.
+  - Enter the door, and fight the Stoeny Roost inside,and open the two
+  - chests, to get bombs and arrows. Come back out, and head farther to the
+  - right, and defeat the Stoney Roost. Just beyond him, is another door.
+  - until you reach a Sphinx. Defeat it, and take the next flight of stairs
+  - blocked section of this floor. You can fight, and get the chests, which
+  - Move around, and head up to the next floor again, afterward.
+  - Defeat the Sphinx onb the right, and you can get two chests, each with
+  - 10 bombs inside. On the lef,t is a Stoney Roost. Defeat him, and move
+  - platform (by defeating the Gather) you can head to the top of the room
+  - to get more bombs, or on the left of the room (get there by jumping
+  - Move back to the middle platform, and blow up the center tile with a
+  - down again. You'll be completely surrounded by enemies, and chests.
+  - Defeat one of the enemies, to get out, and possibly more, for the EXP.
+  - leave. So, head to the south-east corner of the room, and go under the
+  - From below the ice, head to the door in the north-west part of the room.
+  - Defeat the Lamia, and head through the door. Fight your way to the wall,
+  - | Snow Storm | should win; You'll know he's going down when he |
+  - When you beat him, you'll save the second crystal! Then, Pheobe will
+  - leave, to go back to Aquaria, and see if the ice melted. Get the River
+  - Coin from the treasure chest, and then, leave the Ice Pyramid - you'll
+- PARTY_CHANGES:
+  - statue on the right, and Phoebe will tell you she sees a switch. Stab
+  - go back to the entrance of the pyramid.
+  - Turn around, and go back to the stairs. This time head to your left, and
+  - on the right, to open a door on the left, to leave the isolated area.
+  - leave. So, head to the south-east corner of the room, and go under the
+  - leave, to go back to Aquaria, and see if the ice melted. Get the River
+  - Coin from the treasure chest, and then, leave the Ice Pyramid - you'll
+- ENEMIES:
+  - Desert Hag
+  - Lamia
+  - Mage
+  - Phanquid
+  - Sphinx
+  - Stoney Roost
+- BOSS: Ice Golem
+- ITEMS:
+  - Magic Mirror
+  - Explosive(s)
+  - Arrow(s)
+  - Refresher(s)
+  - River Coin
+  - Magic Mirror
+  - Magic Mirror
+- WEAPONS:
+  - Axe
+  - Bomb
+  - Cat Claw
+  - Knight Sword
+- ARMOR:
+  - Noble Armor
+- SPELLS:
+  - Cure
+  - Fire
+  - Heal
+  - Thunder
+
+LOCATION: Aquaria + Spencer's Place
+- ORDER: 25
+- STORY_BEATS:
+  - Go back to Aquaria, and you'll find a town that seems completely
+  - the water, you can go underneath the house. Do so, to enter Spencer's
+  - ground platform. Head south, crossing bridges, and using stairs when
+  - When you reach the bottom, head through to the bottom of the screen,
+  - Head downward, and cross the bridge on the right. Talk to the old man,
+  - So, head back up to Aquaria. Stay at the inn maybe, pick up some items
+  - potions in the Inn, though, you can get them for free at Libra Temple.
+- PARTY_CHANGES:
+  - Go back to Aquaria, and you'll find a town that seems completely
+- ITEMS:
+  - Heal Potion(s)
+  - Refresher(s)
+  - Cure Potion(s)
+  - Venus Key
+- WEAPONS:
+  - Cat Claw
+
+LOCATION: Battlefield
+- ORDER: 26
+- STORY_BEATS:
+  - a problem, you can always go back to Foresta or Aquaria to rest anyway.
+- PARTY_CHANGES:
+  - a problem, you can always go back to Foresta or Aquaria to rest anyway.
+- ENEMIES:
+  - Phanquid
+  - Sphinx
+- WEAPONS:
+  - Bomb
+  - Jumbo Bomb
+  - Knight Sword
+- SPELLS:
+  - Exit
+
+LOCATION: Battlefield
+- ORDER: 27
+- STORY_BEATS:
+  - head past it, and into Focus Tower by another entrance.
+- ENEMIES:
+  - Freezer Crab
+  - Gather
+
+LOCATION: Focus Tower
+- ORDER: 28
+- STORY_BEATS:
+  - When you enter, there's a flight of stairs in front of you. Head down
+  - named Reuben in Fireburg, and then leave. You're growing used to his
+  - If you bomb the door on the left, you can walk through, and get the
+  - spot will not work. Now, leave Focuse Tower, and enter it again through
+  - the entrance near Libra Temple. Head down the first set of stairs, go
+  - Head south, and if you moved the statue to the right spot, it should
+  - region, when you move, there's an earthquake. You'll find out why, a
+- PARTY_CHANGES:
+  - named Reuben in Fireburg, and then leave. You're growing used to his
+  - spot will not work. Now, leave Focuse Tower, and enter it again through
+- ITEMS:
+  - Explosive(s)
+  - Venus Shield
+  - Blizzard [Spell]
+  - Venus Key
+  - River Coin
+- WEAPONS:
+  - Bomb
+- ARMOR:
+  - Venus Shield
+- SPELLS:
+  - Blizzard
+  - Cure
+  - Exit
+
+LOCATION: Battlefield
+- ORDER: 29
+- STORY_BEATS:
+  - of GP. Head north, after clearing it out, to find another battlefield -
+- ENEMIES:
+  - Jelly
+- SPELLS:
+  - Fire
+
+LOCATION: Battlefield
+- ORDER: 30
+- STORY_BEATS:
+  - should be able to clear this place out. By doing so, you'll be rewarded
+  - Fireburg! Although, you can access fireburg from here, anyway.
+- ENEMIES:
+  - Jelly
+  - String Rat
+- ITEMS:
+  - Gemini Crest
+  - Gemini Crest
+
+LOCATION: Battlefield
+- ORDER: 31
+- STORY_BEATS:
+  - out, and you'll get a reward of 816 EXP. Now, head west, to Fireburg.
+- ENEMIES:
+  - Plant Man
+- WEAPONS:
+  - Axe
+
+LOCATION: Fireburg
+- ORDER: 32
+- STORY_BEATS:
+  - The first thing to do in this town, is to meet Reuben. Head north from
+  - he joins you, on the condition that you'll help; Reuben joins the team!
+  - house. No probelm though. Enter the hotel, and walk to the back. Here,
+  - you'll meet up with Tristam again. He'll give you a Multi-Key, and say
+  - the hotel, down to where a house is. This time, you'll be able to enter.
+  - town on the left side, to gain access to the next areas. Oh, and before
+  - worth it! After getting it, you can head out, to a battlefield west of
+- PARTY_CHANGES:
+  - he joins you, on the condition that you'll help; Reuben joins the team!
+  - it should help you unlock the door of the guy's house. So, leave the
+  - map, you can throw them! Now, you can leave the house, and exit the '
+- ITEMS:
+  - Refresher(s)
+  - Multi-Key
+  - Mega Genade
+  - Seed(s)
+- WEAPONS:
+  - Axe
+  - Battle Axe
+  - Cat Claw
+- SPELLS:
+  - Exit
+
+LOCATION: Battlefield
+- ORDER: 33
+- STORY_BEATS:
+  - you encounter any Flazzards, you'll probably want to use Blizzard. Clear
+  - them all out, and you'll be getting a healthy boost in GP. Head west,
+  - to fight one more Battlefield before reaching the Mine, afterwards.
+- ENEMIES:
+  - Plant Man
+  - Sting Rat
+  - Flazzard
+- WEAPONS:
+  - Axe
+  - Morning Star
+- SPELLS:
+  - Blizzard
+
+LOCATION: Battlefield
+- ORDER: 34
+- STORY_BEATS:
+  - picking up a bit of EXP and GP in the process, you'll get a very good
+  - Thunder, head north, to the Mine.
+- ENEMIES:
+  - Flazzard
+  - Red Cap
+- SPELLS:
+  - Thunder
+
+LOCATION: Mine
+- ORDER: 35
+- STORY_BEATS:
+  - belt, heading upward. Fight the Red Bone at the top, and head right
+  - from there. If you bomb the door on this platform, you can enter a cave
+  - Potions, and the one on the left contains Potions. After you get the
+  - there will be two Red Bones guarding another blocked door. Defeat them
+  - and blow up the door. Once inside, fight your way around the right side
+  - Next, Take the conveyor belt going downward, and defeat the Zombie at
+  - optional cave; You'll know the door, as always, it's blocked by bombable
+  - rocks. Inside, defeat the Flazzard, and the Red Cap on the right, and
+  - move around the platform, to the wall. Climb to the floor, where you'll
+  - fight another Red Bone, than climb up to a second platform. Either climb
+  - over, or fight the Zombie there, to reach a chest full of bombs. Take
+  - that's moving left. You'll be brought back to the first platform. This
+  - head right, onto another conveyor belt, again, taking out a Zombie.
+  - conveyor belt that's moving up, and fight - You guessed it! - A zombie.
+  - to fight Jinn, who's blocking the door on the next platform!
+  - When he's defeated, exit the Mine through the door he was blocking. On
+  - you to see a short cutscene of the world map.) After he leaves, go back
+  - To get back to the entrance, defeat the Red Bone near the top of the
+  - blocking. Defeat another Red Bone at the top, to access the conveyor
+  - the mine, and head back to Fireburg.
+- PARTY_CHANGES:
+  - contents, leave the cave.
+  - the upgrade to the Cat Claw, the Charm Claw! Take it, and leave the
+  - them, and leave the cave; Now, you're after Jinn, the boss of the Mine!
+  - you to see a short cutscene of the world map.) After he leaves, go back
+- ENEMIES:
+  - Zombie
+  - Red Cap
+  - Red Bone
+  - Flazzard
+  - Plant Man
+- BOSS: Jinn
+- ITEMS:
+  - Charm Claw
+  - Explosive(s)
+  - Heal Potion(s)
+- WEAPONS:
+  - Bomb
+  - Cat Claw
+  - Charm Claw
+- ARMOR:
+  - Charm
+- SPELLS:
+  - Cure
+  - Exit
+  - Fire
+  - Heal
+  - Quake
+  - Thunder
+
+LOCATION: Fireburg
+- ORDER: 36
+- STORY_BEATS:
+  - By heading back to the house you found Reuben in, you'll find Reuben's
+  - is in the Lava Dome. You'll be going there soon, but for now, you have
+- ITEMS:
+  - Refresher(s)
+  - Seed(s)
+  - Explosive(s)
+- SPELLS:
+  - Fire
+
+LOCATION: Sealed Temple + Wintry Temple
+- ORDER: 37
+- STORY_BEATS:
+  - Inside, you'll meet that cloaked character again. This time, he's here
+  - Well fine, be like that, Mr. Cloaked man! After he leaves, get the Cure
+  - Sealed temple again, and leave. Head north, two spots from here, to
+- PARTY_CHANGES:
+  - Well fine, be like that, Mr. Cloaked man! After he leaves, get the Cure
+  - Sealed temple again, and leave. Head north, two spots from here, to
+- ITEMS:
+  - Heal Potion(s)
+  - Cure Potion(s)
+- SPELLS:
+  - Cure
+  - Heal
+
+LOCATION: Battlefield
+- ORDER: 38
+- STORY_BEATS:
+  - Again with the battlefields, huh? Yup. This time, you'll be facing off
+  - it's time to head east, to the Volcano.
+- ENEMIES:
+  - Zombie
+  - Ghost
+  - Red Bone
+- SPELLS:
+  - Cure
+  - White
+
+LOCATION: Volcano
+- ORDER: 39
+- STORY_BEATS:
+  - Wolf guarding a door. Defeat him, and walk through the door, navigating
+  - to the left, until you come out through another door. Open the chest to
+  - recieve the powerful White, Wizard magic! Now, head back through the
+  - you defeat the ghost on the right, then move down, on the raised
+  - one with Hwal Potions, and one with Refrshers. If you head north, to
+  - door to get some bombs. When you get them, come back down.Finally,
+  - before you move on, head back to where you entered. This time move left,
+  - until you pass some stairs. Defeat the enemies, to get a few cures.
+  - enemies invisible - Unless you have a mask, which you'll get in
+  - a little while, a few screens ahead from where you are now. Heads up
+  - across to the next platform. Defeat the Red Bone, Ghost, and Nitemare,
+  - then head north, to the next screen. Head left, and down the steps,
+  - out in front of a chest. Get the Heal Potions, and head right, up more
+  - bombs inside. After getting them, head left, and up more stairs, to
+  - Beat the ghost on your left, and move up the stairs, to defeat a Ware
+  - Wolf. Just beyond him, is the chest with the Mask inside. Now you'll be
+  - Nitemare, who's blocking a chest of Cure Potions. After you get them,
+  - here, head up the stairs, and defeat the Nitemare, heading up more
+  - stairs, to the next screen. Defeat the Nitemare on your left, and
+  - head past where he was, and go through the cave, to the right. Kill
+  - the Ware Wolf, and head up another flight of stairs, where there's a
+  - Defeat the two enemies on the right, to reach a chest with 3 Cure
+  - you fight the Nitemare and the Ware Wolf on the left, you can reach
+  - a chest with Heal Potions. After picking them up, head for the top
+  - get ready to fight Medusa, who's in the middle of the platform!
+  - | Snake Head | the one using white - Heal him if he gets confused |
+  - the stairs she was blocking. You'll go back to the world map, but now
+  - you'll have access to a new part of the volcano - The Lava Dome! Heal
+  - or, perhap[s go back to Fireburg to rest, than move on to the Lave Dome,
+- PARTY_CHANGES:
+  - the stairs she was blocking. You'll go back to the world map, but now
+  - or, perhap[s go back to Fireburg to rest, than move on to the Lave Dome,
+- ENEMIES:
+  - Ghost
+  - Red Bone
+  - Nitemare
+  - Were Wolf
+- BOSS: Medusa
+- ITEMS:
+  - White [Spell]
+  - Refrsher(s)
+  - Cure Potion(s)
+  - Heal Potion(s)
+  - Mask
+  - Mask
+- WEAPONS:
+  - Morning Star
+- SPELLS:
+  - Cure
+  - Fire
+  - Heal
+  - White
+
+LOCATION: Lave Dome
+- ORDER: 40
+- STORY_BEATS:
+  - Start by heading right, and defeating the Hot Wings. Move down to the
+  - next platform, and defeat the Ninja. Head down another set of stairs,
+  - and enter the cave. Fight your way to the right, until you reach some
+  - the next platform - The one with a Stheno on it. Defeat the Stheno,
+  - and open the chest, to reveal the valuable Life Spell! There are a
+  - can also take the door on the left, and drop down (after defeating an
+  - Head left, until you see a flight of stairs. Take them, and defeat
+  - the Ninja at the top. Keep going left, until you defeat another Ninja.
+  - Defeat him, and keep going (again) until you reach a cave door. Go
+  - inside, and head to the right. You can fight some of the monsters,
+  - the platform on your left, bomb them, and jump over. Defeat the Stheno
+  - and head up the stairs. A few enemies later, and you'll have access
+  - Moon Helm armor! After getting them, either head back to where you
+  - Now, head to the left, and defeating the Hot Wings. Go into the cave
+  - it was blocking, and you'll see a Fangpire. After defeating him, jump
+  - across the stone steps in the lava, and fight the Adamant Turtle, to
+  - leave the cave. Head down the stairs, and go to the left. There's
+  - another cave that you should enter here. If you do some fighting, you
+  - and Refreshers. If you head right from where the chests are, and go
+  - an Avizzard. Defeat the Ninja, Fangpire, and Adamant Turtle and
+  - the Iflyte here to reach an exit. Defeat another Iflyte outside, and
+  - step on a switch, to open a door on another platform. Go back through
+  - the Avizzard that's waiting for you. After that, head down the stairs,
+  - and go right, to the cave; Enter it. Ahead, is a treasure chest,
+  - that contains 3 potions, but fight your way around the left-hand side
+  - of the cave, and take out the Stheno near the end, and you'll be at a
+  - straight, as far as you can go, and head left. After defeating a
+  - Salamand, and a Stheno, you'll reach two treasure chests - One with
+  - Cure Potions, and one with Heal Potions. Take them, and go back to the
+  - beginning of the room. This time, take a left. Fight your way to the
+  - stairs, and you'll be able to get a few more chests, but more
+  - importantly, you'll reach a spot where you can jump to a platform on
+  - the right. Do that, and head north, and to the left, and the top, and
+  - the cave. From here, you have to head down two flights of stairs, and
+  - the next exit though, defeat the Hot Wings, and head down the first
+  - of the screen, where you can climb some stairs, and defeat the Salamand
+  - at the top. Jump to the platform on the right, defeat the Hot Wings,
+  - and go down the stairs, next. Afterwards, defeat the Hot Wings, and go
+  - up the next stairs, defeat the Ninja, and jump to the left. It's a
+  - head through the large door, into a room with lots of lava.
+  - First, walk straight ahead, and defeat the Salamand. From here, you
+  - the Dualhead Hydra in the top-middle - No it isn't an item, it's a
+  - | Dualhead Hydra- 14,000HP |
+  - | Poison Breath| can be very deadly. As one head falls off, and the |
+  - After the battle's over - Assuming you won of course - you'll save the
+  - Fire Crystal! You'll also see a lava flow do some changes on the world
+  - map, as well as here that you should head toward Windia next. Open the
+  - chest to get the Sun Coin, then either leave, or use exit. You should
+  - notice a new Battelfield. Of course, now you'll have to clear it out!
+- PARTY_CHANGES:
+  - leave the cave. Head down the stairs, and go to the left. There's
+  - step on a switch, to open a door on another platform. Go back through
+  - Cure Potions, and one with Heal Potions. Take them, and go back to the
+  - contain Cure Potions) and then leave, through another door on the
+  - chest to get the Sun Coin, then either leave, or use exit. You should
+- ENEMIES:
+  - Hot Wings
+  - Avizzard
+  - Fangpire
+  - Adamant Turtle
+  - Ninja
+- BOSS: Dualhead Hydra
+- ITEMS:
+  - Explosive(s)
+  - Cure Potion(s)
+  - Heal Potion(s)
+  - Refresher(s)
+  - Sun Coin
+  - Sun Coin
+- WEAPONS:
+  - Bomb
+  - Morning Star
+- ARMOR:
+  - Moon Helm
+- SPELLS:
+  - Cure
+  - Exit
+  - Fire
+  - Heal
+  - Life
+  - White
+
+LOCATION: Battlefield
+- ORDER: 41
+- STORY_BEATS:
+  - this place out, and you'll get a boost in EXP. Now, you're going back to
+- ENEMIES:
+  - Stheno
+  - Iflyte
+- SPELLS:
+  - White
+
+LOCATION: Focus Tower + Doom Castle
+- ORDER: 42
+- STORY_BEATS:
+  - Coin, you'll be able to open the third one (purple.) Open it, and you'll
+  - the stairs. Walk straight ahead in this area, and you'll reach another
+  - set of stairs. Go through, to enter Doom Castle - Well, only one room of
+  - it actually! Defeat the Minotar Zombie, and open the chest, to recieve
+  - the Aero spell. Now, you can leave the room. Head back to where you met
+- PARTY_CHANGES:
+  - Mac's ship as you go to Windia. With that, he'll leave, and you can take
+  - the Aero spell. Now, you can leave the room. Head back to where you met
+- ENEMIES:
+  - Shadow
+- ITEMS:
+  - Aegis Shield
+- SPELLS:
+  - Aero
+
+LOCATION: Rope Bridge
+- ORDER: 43
+- STORY_BEATS:
+  - up being knocked off the bridge though, leaving you to fight alone -
+  - Not that the Mummy is strong. Defeat it, and Hero will automatically
+  - if you want some Cure Potions. You'll also want to climb down the fifth
+  - world map, head right, to Alive Forest.
+- ENEMIES:
+  - Mummy
+- ITEMS:
+  - Cure Potion(s)
+  - Seed(s)
+- SPELLS:
+  - Cure
+  - Exit
+
+LOCATION: Alive Forest + Foresta
+- ORDER: 44
+- STORY_BEATS:
+  - Cure Potions. After you get it - or decided not to - head to the bottom
+  - of the area, where you'll find a Mummy blocking a bridge. Defeat the
+  - On the other side of the bridge, there's a Specter for you to defeat.
+  - From here, head left and cut some trees down, to reach a chest with 3
+  - Heal Potions inside. If you cut some trees heading downward, you'll see
+  - a Specter blocking a lone tree. Defeat him, and chop down the tree to
+  - reach a warp. Step on it, to enter a room with a chest of Refreshers
+  - After getting the cures, and the Refreshers, head back to the right -
+  - Again, clearing a path by cutting down trees. Defeat either the Specter
+  - underneath - you have a stone for this kind - to enter a room with a
+  - From where the large tree is, head left, and cut trees, heading south,
+  - With your new weapon, head back to Aquaria.
+- PARTY_CHANGES:
+  - (This is actually part of Foresta, though you can't leave the
+  - response from him - She's in Aquaria. Before you leave, though, fight
+  - before you leave.
+- ENEMIES:
+  - Mummy
+  - Specter
+- ITEMS:
+  - Cure Potion(s)
+  - Heal Potion(s)
+  - Ninja Star(s)
+  - Refresher(s)
+- WEAPONS:
+  - Axe
+  - Giant's Axe
+- SPELLS:
+  - Cure
+  - Heal
+
+LOCATION: Aquaria + Spencer's Place
+- ORDER: 45
+- STORY_BEATS:
+  - Once in Aquaria, immediately head back to Spencers Place. Climb down
+  - Head back up to Aquaria, and go inside Phoebe's house. Grab some Heal
+- PARTY_CHANGES:
+  - Spencer, a little ways back. Talk to Spencer, and Tristam will leave
+- ITEMS:
+  - Heal Potion(s)
+  - Refresher(s)
+  - Cure Potion(s)
+  - Exlposive(s)
+- WEAPONS:
+  - Bomb
+  - Dragon Claw
+- SPELLS:
+  - Heal
+
+LOCATION: Alive Forest + Giant Tree
+- ORDER: 46
+- STORY_BEATS:
+  - Head through the forst - remember, you can stop and pick up the same
+  - him, and He'll say you can pass if you defeat the monsters inside of
+  - him. You can enter through his mouth.
+  - Head straight from where you enter, and defeat either (or both) the
+  - a chest of Refreshers. If you fight the enemies to the right from where
+  - you enter, you'll reach a chest with Cure Potions inside. After getting
+  - the items you want, head left from where you entered. Defeat the Mummy
+  - picking them up, continue north, and to the right. Defeat a Live Oak
+  - to reach some climbable wall, and defeat another at the top. From
+  - From where you get the heal potions, go south, defeating the Live Oak,
+  - and cut a path through the mushrooms to the left. Defeat another Mad
+  - Toad, and you'll reach a chest with bombs, and a chest with Cure
+  - Potions. Take them, and go back to the entrance of the room. Cut some
+  - 'shrooms going downward, and fight your way around the room, where you
+  - can leave through another door. Open the fancy chest to get the Meteor
+  - spell, than backtrack through the mushroom room. Head to the left side
+  - of the room, and grapple across the hole in the floor, then, defeat the
+  - Live Oak. Walk to the right, and defeat the Mad Toad, which is blocking
+  - climb down to the floor. Defeat the snipion and the Mad Toad on your
+  - Get the potions, then climb back up to where you entered. Defeat the
+  - platform to the right, defeating the three Leeches, until you reach
+  - a door - Stab it, and walk through it. You'll be in another room with
+  - Potions, one with Cure Potions, but to reach the door, head North-west
+  - defeating the two Leeches. In the next room, walk left, and fight the
+  - Mad Toad, to reach the pit. Climb down the vine, and defeat the Mad
+  - Defeat the Mad Toad and the Leech from where you enter, and head north.
+  - platform, to the right, at the top of the wall, defeat the Leech, and
+  - When you enter the room, head south. Defeat the two Skuldiers, and the
+  - Ooze. You'll reach a wall with three doors on it. Go through the one in
+  - kill another Ooze. Defeat a second Ooze on the left, to reach a chest
+  - around the top of the platform, defeating the enemies, until you reach
+  - On the fifth floor, you'll be surrounded by Skeletons when you enter.
+  - bombs, and a chest of Healing Potions. After you get these, heal up,
+  - After you defeat the Gidrah, talk to the face that is behind where he
+  - was. You'll see a cutscene of the Tree actually walking across the world
+  - world map, where you can now enter Kaidge Temple.
+- PARTY_CHANGES:
+  - Potions. Take them, and go back to the entrance of the room. Cut some
+  - can leave through another door. Open the fancy chest to get the Meteor
+  - of Heal Potions, then leave through the door. When you come out, walk
+- ENEMIES:
+  - Mummy
+  - Specter
+  - Live Oak
+  - Snipion
+  - Leech
+  - Ooze
+  - Skuldier
+- BOSS: Gidrah
+- ITEMS:
+  - Cure Potion(s)
+  - Heal Potion(s)
+  - Explosive(s)
+  - Refresher(s)
+- WEAPONS:
+  - Dragon Claw
+- SPELLS:
+  - Aero
+  - Cure
+  - Exit
+  - Heal
+  - Meteor
+  - White
+
+LOCATION: Kaidge Temple
+- ORDER: 47
+- STORY_BEATS:
+  - Cure Potions, but that's all you can do in here, for now. So, get the
+- PARTY_CHANGES:
+  - again. He'll mention Captain Mac, and leave again. You can walk through
+  - potions, and leave the Temple. There's a Battlefield for you to train
+- ITEMS:
+  - Cure Potion(s)
+- SPELLS:
+  - Cure
+
+LOCATION: Battlefield
+- ORDER: 48
+- STORY_BEATS:
+  - This battlefield isn't so bad. You'll be facing a new enemy though, the
+  - it back at you. When you win, you'll get a boost in EXP. Now, you should
+  - head east to another Battlefield that you can train at, for some more
+- ENEMIES:
+  - Ooze
+  - Skuldier
+  - Water Hag
+- SPELLS:
+  - Aero
+
+LOCATION: Battlefield
+- ORDER: 49
+- STORY_BEATS:
+  - anyway.) When you clear them out, you'll get another EXP boost. After
+  - it's cleared out, head north, to Windia.
+- ENEMIES:
+  - Water Hag
+  - Vampire
+- SPELLS:
+  - Aero
+  - Meteor
+  - White
+
+LOCATION: Windia
+- ORDER: 50
+- STORY_BEATS:
+  - The first thing you should do when you enter Windia, is enter the house
+  - the house, and head to the right, Enter the small house, on the right
+  - his daughter is lost on the mountain - That will be where you head next.
+- ITEMS:
+  - Cupid Locket
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+- SPELLS:
+  - Exit
+  - Heal
+
+LOCATION: Windhole Temple
+- ORDER: 51
+- STORY_BEATS:
+  - want them, none-the-less. After picking them up, leave, and head north
+- PARTY_CHANGES:
+  - want them, none-the-less. After picking them up, leave, and head north
+- ITEMS:
+  - Heal Potion(s)
+- SPELLS:
+  - Heal
+
+LOCATION: Mount Gale
+- ORDER: 52
+- STORY_BEATS:
+  - When you enter, head right, past the first set of stairs. Keep going
+  - until you reach a second set. Head upward from here, and defeat the
+  - Vampire to reach a chest that contains Heal Potions. Head back down the
+  - stairs, and go east again, to a third set of stairs. Defeat the Water
+  - here, head south, and kill another Water Hag, and go down more stairs.
+  - At the bottom, head right, and kill the Vampire blocking more stairs.
+  - If you head up to the right, you can grapple to another paltform, and
+  - defeat another Vampire to reach a chest of Refreshers. After getting
+  - down more stairs, then head right, going up another flight of stairs,
+  - with a Skuldier on top. Defeat him, and cross the bridge to the left.
+  - Here, defeat the Water Hag, and head north. Grapple to the next
+  - platform, and defeat the Vampire to access a fancy chest with the
+  - Apollo Helm inside. Take it, and defeat the Water Hag. Jump to the
+  - platform. Head to the middle platform, heal, and get ready to fight
+  - | Hypno-sleep | cure Kaeli if she gets killed. You'll need both |
+  - enemy you'll meet later does. So, use Exit or backtrack to the world
+  - map, and go back to Windia - You'll notice the wind isn't blowing so
+- PARTY_CHANGES:
+  - map, and go back to Windia - You'll notice the wind isn't blowing so
+- ENEMIES:
+  - Water Hag
+  - Vampire
+  - Skuldier
+- BOSS: Dullahan
+- ITEMS:
+  - Heal Potion(s)
+  - Refresher(s)
+  - Apollo Helm
+- ARMOR:
+  - Apollo Helm
+- SPELLS:
+  - Aero
+  - Cure
+  - Exit
+  - Heal
+  - Meteor
+  - Thunder
+
+LOCATION: Windia
+- ORDER: 53
+- STORY_BEATS:
+  - Rainbow Road, allowing you to access Pazuzu's Tower! Leave the house,
+  - and head north through town. Take the North Exit, to reach Pazuzu's
+- PARTY_CHANGES:
+  - Rainbow Road, allowing you to access Pazuzu's Tower! Leave the house,
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+  - Seed(s)
+- SPELLS:
+  - Exit
+
+LOCATION: Pazuzu's Tower
+- ORDER: 54
+- STORY_BEATS:
+  - When you first enter, head up to the platform on the right, and talk to
+  - returns home. Don't leave yet though, you still need to get the Wind
+  - Crystal! After you rescue her, fight your way up, thorugh the center of
+  - He'll then run away. Go back to where you found Norma, and take the door
+  - on the right. Defeat the Beholder, and go up the stairs.
+  - When you enter the second floor, defeat the Garuda, and begin climbing
+  - the stairs in front of you. Defeat another on a platform between stairs,
+  - at the third floor - Fast huh? Head to the left, until you meet a
+  - Beholder. From here, head south, and kill the Manticore. Move to the
+  - right from here, and defeat the Chimera. Go through the door on the
+  - right, and fight some more enemies, moving upward, into another room.
+  - Defeat one/some of the enemies, and take the Explosives from the chests.
+  - When you're done, leave the room, and head bac to the left, and go
+  - around the wall, to the door (You'll have to defeat a Chimera, Beholder,
+  - and a Manticor to get there.)
+  - You'll enter the fourth floor - which is a stairway like the second
+  - floor. Head to the top, killing some Beholders on the way. From here,
+  - go through the door to reach the fifth floor. Defeat the Gardua, and
+  - walk around the platform you enter on. Go through the door, and head
+  - set of stairs! Climb up them, defeating the Manticores, until you reach
+  - to another platform a little north, and defeat the Thanatos. Go up the
+  - stairs, and defeat the Sorcerer and the Chimera. Keep fighting enemies,
+  - The first thing to do when you enter this area, is to defeat the
+  - Sorcerer, and head down the stairs. Then, defeat the Naga, and go
+  - from the chest, and defeat the Naga, and the Sorcerer, to reach a fancy
+  - Defeat the Naga on the other side, and then defeat the Sorcerer. Head
+  - and hit the switch with your axe. Go back to where you bombed the door,
+  - and head left, and through the door near where you got the Flare spell.
+  - Defeat the Thanatos, and move south. Kill the Sorcerer and the Garuda
+  - on your right, and head along the ledge they were on. At the end, jump
+  - to the platform on the right. Farhter to the right, you can head down
+  - Afterwards, go back upwards, and defeat the Thanatos, to reach another
+  - Defeat the Gargolye near where you enter, and move south. On the right,
+  - after defeating some more monsters, is a door. Fight the Sorcerer, and
+  - head through it. Defeat a Chimera or two, and another Sorcerer, to get
+  - to anotherfancy chest.Open it, to get the incredibly strong Excalibur
+  - he leaves, head south again, and go to the left, defeating the Sorcerer.
+  - From here, head north, kill the Chimera, and hit the switch. After you
+  - do that, head down the stairs near the switch, and head down the stairs,
+  - In the next room, defeat the Naga and the Garegoyle, and go through the
+  - about that that, just head past it, and go through the door. There's
+  - the switch. Now, head dowm, and take the stairs, back to the first floor.
+  - make your way back to floor 5 - you shouldn't have to fight anyone, you
+  - When you defeat Pazuzu, you'll automatically begin moving through the
+  - tower shaft. At the top, you free the Sky Crystal! Open the chest, to
+  - get the Sky Coin, then backtrack through the castle and leave, or cast
+  - Exit, for a quicker route. It's time to head back to Windia.
+- PARTY_CHANGES:
+  - returns home. Don't leave yet though, you still need to get the Wind
+  - He'll then run away. Go back to where you found Norma, and take the door
+  - When you're done, leave the room, and head bac to the left, and go
+  - and hit the switch with your axe. Go back to where you bombed the door,
+  - Afterwards, go back upwards, and defeat the Thanatos, to reach another
+  - sword! Now, leave the room, and go through the door on the right. Here,
+  - he leaves, head south again, and go to the left, defeating the Sorcerer.
+  - From here, head north, kill the Chimera, and hit the switch. After you
+  - do that, head down the stairs near the switch, and head down the stairs,
+  - the switch. Now, head dowm, and take the stairs, back to the first floor.
+  - get the Sky Coin, then backtrack through the castle and leave, or cast
+- ENEMIES:
+  - Garuda
+  - Beholder
+  - Manticore
+  - Chimera
+  - Thanatos
+  - Sorcerer
+- BOSS: Pazuzu
+- ITEMS:
+  - Explosive(s)
+  - Flare [Spell]
+  - Excalibur
+  - Sky Coin
+  - Sky Coin
+- WEAPONS:
+  - Axe
+  - Bomb
+  - Excalibur
+- SPELLS:
+  - Aero
+  - Cure
+  - Exit
+  - Flare
+  - Heal
+
+LOCATION: Windia
+- ORDER: 55
+- STORY_BEATS:
+  - her place as your parner, ans you're told to get the Thunder Rock
+  - from Arion, who's at Reuben's house. You'll be going to Fireburg now.
+- PARTY_CHANGES:
+  - come to greet you, but Reuben! Kaeli leaves, allowing Reuben to take
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+  - Seed(s)
+  - Thunder Rock
+- SPELLS:
+  - Thunder
+
+LOCATION: Fireburg
+- ORDER: 56
+- STORY_BEATS:
+  - then leave, and head back to Windia.
+- PARTY_CHANGES:
+  - then leave, and head back to Windia.
+- ITEMS:
+  - Refresher(s)
+  - Seed(s)
+  - Explosive(s)
+  - Thunder Rock
+  - Thunder Rock
+- SPELLS:
+  - Thunder
+
+LOCATION: Windia
+- ORDER: 57
+- STORY_BEATS:
+  - access Spencer's place! Leave the town, and sure enough, there's a
+  - Place. Enter Spencers Place - It's your next destination.
+- PARTY_CHANGES:
+  - access Spencer's place! Leave the town, and sure enough, there's a
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+  - Seed(s)
+
+LOCATION: Spencer's Place
+- ORDER: 58
+- STORY_BEATS:
+  - blocked door, and go back to the water, and back to where you entered
+  - Now, you can leave. You should now head back to Windia, for a moment.
+- PARTY_CHANGES:
+  - leave just yet though. First, walk forward, and get into the water. Go
+  - blocked door, and go back to the water, and back to where you entered
+  - Now, you can leave. You should now head back to Windia, for a moment.
+- ITEMS:
+  - Monius Crest
+  - Mobius Crest
+- WEAPONS:
+  - Bomb
+  - Mega Grenade
+
+LOCATION: Windia + Ship Dock
+- ORDER: 59
+- STORY_BEATS:
+  - Again, head to Otto's house. This time, you'll be talking to Kaeli
+  - the house. Don't leave town yet, though. Enter the town that's in the
+  - Heal Potions from the chest. Nothing to do at the Dock, but head north,
+- PARTY_CHANGES:
+  - her father, Captain Mac. That's the only item you need here, so leave
+  - the house. Don't leave town yet, though. Enter the town that's in the
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+  - Seed(s)
+  - Captain Cap
+  - Captain Cap
+- SPELLS:
+  - Heal
+
+LOCATION: Mac's Ship + Windia
+- ORDER: 60
+- STORY_BEATS:
+  - You'll enter the ship's deck on the right. Head towards the middle,
+  - in a chest, at the southern tip of the ship. After that, go back to
+  - where the wheel is, and head upward, and kill the Chimera. Take a
+  - one, between two Thanatos. Defeat one or both of them, grab some Heal
+  - You'll enter a very tiny room. Just take the other set of stairs, as
+  - it's the only thing in there. From here, head straight down, and kill
+  - though, and get the chest, which contains Refreshers. To move on, just
+  - On the next floor, walk straight ahead, and defeat the Gargoyle. After
+  - that, head up the stairs, and onto a new floor. Open the fancy chest
+  - head back to Mac's ship, and take the wheel! You'll reach a new entrance
+- PARTY_CHANGES:
+  - in a chest, at the southern tip of the ship. After that, go back to
+  - Phoebe. Reuben will leave, and Phoebe will join in place of him. Rest
+- BOSS: Chimera + Thanatos + Naga + Beholder + Manticor + Gargoyle
+- ITEMS:
+  - Explosive(s)
+  - Heal Potion(s)
+  - Cure Potion(s)
+  - Refresher(s)
+- ARMOR:
+  - Gaia's Armor
+- SPELLS:
+  - Heal
+
+LOCATION: Focus Tower + Doom Castle
+- ORDER: 61
+- STORY_BEATS:
+  - Sub-Boss- Skullrus Rex + Stone Golem + Twinhead Wyvern + Zuh
+  - Go to the left, and defeat the Shadow at the start. Keep going up and
+  - stairs, and a pile of bones. Bomb them, and climb up to defeat the
+  - Grogon ( You fought these in the Bone Dungeon...too easy!) and get the
+  - and climb the stairs, defeating the Gorgon. From here, grapple two
+  - platforms to the left, from here, defeat the Minotar Zombie - Another
+  - down. Open the chest for some cures, and toss a bomb at the bones on
+  - | Bone Missile | the fight 1 on 2 in your favor. You'll be doing big |
+  - | Rip Earth | damage, so the fight won't last long. |
+  - You'll be in a cave-room of Focus Tower. Go through the next set of
+  - stairs, and you'll be back in the main area of Focus Twoer, in front of
+  - and you'll have just entered an ice area. Kill the Shadow on the left,
+  - In the next room, head left, and jump the gap to the next platform. Stab
+  - the statue to open a door, which you can head through. Kill the Phanquid
+  - jump back across to the right. Head right from where you entered, and
+  - Heal Potions from the chest, and head down, at the next juntion. Grapple
+  - downard, and stab the statue. From here, head all the way to the right,
+  - will open, but you can't reach it from here. Go back to the middle
+  - the Freezer Crab. Head through the door on top, grapple to the right,
+  - | Hypno Sleep | you'll be fine. |
+  - allowing you to continue going up. Enter the door on the next floor, to
+  - When you enter, head to the right, until you see some blocks in the lava
+  - defeat him, head left, and downward, and then to the right. Grapple to
+  - the platform on your right, defeat the Stheno, and walk forward to
+  - greet the next Sub-boss, the Twinhead Wyvern!
+  - | Twinhead Wyvern - 15,000HP |
+  - | GP: 0 | boss, the Dualhead Hydra. He fights with a Stheno, |
+  - After killing the third sub-boss, again, head back to the main stairway.
+  - this area, or you'll drop to the previous fire room, again!
+  - and go down, through a door at the next juntion. Defeat the Cerberus,
+  - and go up the steps, to the higher platform. From here, head right, and
+  - head straight along the path, until you reach a Chimera that you should
+  - some steps. Kill him, and head down the steps, and through the door.
+  - Head right, defeating the enemies behind the glass, until you reach
+  - another door. From here, head south, until you defeat a Chimera, and
+  - upwards. Take the stairs, and kill the Chimera. Head along this path,
+  - From here, it's a linear path to the center. Defeat one final Thanatos,
+  - | Psycheshield | his Psycheshield, attack, and you'll be fine. |
+  - That was the last of the sub-bosses! Head back to the main stair way,
+  - and head to the top floor. Walk to the middle platform,and you'll place
+  - | GP: 0 | real way to fight him, I'll tell you, you can use |
+  - | Attack List | the fun out of it though, so I hope you'll use the |
+  - | Elixer | Used to save Kaeli. |
+  - | Thunder Rock | Used to build second rainbow road. |
+  - | Attack List | 1 turn to defeat them. Try to take them out as soon |
+  - | EXP: 84 | Battle Strategy: This fight isn't hard. You only have|
+  - | =========== | you'll just start the battle over anyway, so don't |
+  - | GP: 0 | real way to fight him, I'll tell you, you can use |
+  - | Attack List | the fun out of it though, so I hope you'll use the |
+  - | Dualhead Hydra- 14,000HP |
+  - | Poison Breath| can be very deadly. As one head falls off, and the |
+  - | Hypno-sleep | cure Kaeli if she gets killed. You'll need both |
+  - | =========== | aren't bad though. You'll be able to take them out in|
+  - | Beak | when you fight them for the first time, you won't |
+  - | EXP: 114 | Battle Strategy: Giant Toads fight just like the |
+  - | =========== | problem with defeating them. |
+  - | Snow Storm | should win; You'll know he's going down when he |
+  - | Attack List | take one swipe, most likely, to defeat them, if you |
+  - | Snake Head | the one using white - Heal him if he gets confused |
+  - | Head Butt | |
+  - O--------------O and Head Butt, though, this isn't what makes them |
+  - | Head Butt | to control what they do anymore. It's best to take |
+  - | Bone Missile | the fight 1 on 2 in your favor. You'll be doing big |
+  - | Rip Earth | damage, so the fight won't last long. |
+  - | Attack List | levels, is all it should take, to defeat them. Slimes|
+  - | | and you'll come out of the fight victorious. |
+  - | EXP: 201 | Battle Strategy: Sphinxes are easy to defeat, but |
+  - | Choke Up | magic. Stick with the above strategy, and you'll be |
+  - | Attack List | attack should defeat them. They are weak against |
+  - | Hypno Sleep | you'll be fine. |
+  - O--------------O petrify, and if both characters are petrified you'll |
+  - | =========== | fight with Dullahan. Watch out for Doom Dance, and |
+  - | Cure | you should survive the fight easily enough. |
+  - | Twinhead Wyvern - 15,000HP |
+  - | GP: 0 | boss, the Dualhead Hydra. He fights with a Stheno, |
+  - | Psycheshield | his Psycheshield, attack, and you'll be fine. |
+  - | Head Butt | A physical attack. |
+  - | Snake Head | A physical attack that hits up to 5 times. |
+- PARTY_CHANGES:
+  - on the other side, and stab another statue. Now, leave the room, and
+  - that's here as well. Now, leave, and kill the Phanquid, and go through
+  - will open, but you can't reach it from here. Go back to the middle
+  - | Fire Breath | switch to having them both use White. Keep this up, |
+  - | EXP: 396 | Battle Strategy: Ninjas switch between trying to deal|
+  - | EXP: 72 | Battle Strategy: Slimes will switch between using |
+  - | Blizzard | leave them only half-dead though, they can cure |
+  - | Fire Breath | switch to having them both use White. Keep this up, |
+- ENEMIES:
+  - Shadow
+  - Gorgon
+  - Minotar Zombie
+  - Phanquid
+  - Iflyte
+  - Cerberus
+- BOSS: Dark King
+- ITEMS:
+  - Aegis Shield
+  - Arrow(s)
+  - Refresher(s)
+  - Heal Potion(s)
+  - Captain Cap
+  - Elixer
+  - Thunder Rock
+  - Tree Wither
+  - Venus Key
+  - Magic Mirror
+  - Mask
+  - Libra Crest
+  - Gemini Crest
+  - Mobius Crest
+  - River Coin
+  - Sand Coin
+  - Sky Coin
+  - Sun Coin
+- WEAPONS:
+  - Arrow
+  - Axe
+  - Battle Axe
+  - Bomb
+  - Cat Claw
+  - Charm Claw
+  - Dragon Claw
+  - Excalibur
+  - Giant's Axe
+  - Jumbo Bomb
+  - Knight Sword
+  - Mega Grenade
+  - Morning Star
+- ARMOR:
+  - Aegis Shield
+  - Apollo Helm
+  - Charm
+  - Cupid Locket
+  - Gaia's Armor
+  - Magic Ring
+  - Moon Helm
+  - Noble Armor
+  - Steel Armor
+  - Steel Helm
+  - Steel Shield
+  - Venus Shield
+- SPELLS:
+  - Aero
+  - Blizzard
+  - Cure
+  - Exit
+  - Fire
+  - Flare
+  - Heal
+  - Life
+  - Meteor
+  - Quake
+  - Thunder
+  - White
+

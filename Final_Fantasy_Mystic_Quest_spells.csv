@@ -1,0 +1,13 @@
+School,Spell,SpellPower,Element,Found,Field,Battle
+White,Exit,�,,Battlefield north of Libra Temple,Warp to world map,Removes one enemy; no EXP/GP; no effect on bosses
+White,Cure,50,Restorative/Undead,Foresta,Restore HP,Deals damage to undead; can be reflected (no effect on party)
+White,Heal,�,,Falls Basin,Remove status ailments,Inflicts one status on enemy (Poison/Confuse/Sleep/Paralyze/Petrify)
+White,Life,�,,Lava Dome,Revive to full; heals HP/status outside battle,Fatal vs enemies (bug); JP/EU: Fatal vs undead only
+Black,Quake,25*3,Earth,Bone Dungeon,,All enemies; reflectable
+Black,Blizzard,135,Water,Focus Tower,,Single or all; reflectable
+Black,Fire,85,Fire,Focus Tower,,Single or all; reflectable
+Black,Aero,235,Wind,Focus Tower,,Single or all; reflectable
+Wizard,Thunder,180,Lightning,Battlefield far west of Fireburg,,Single or all; reflectable
+Wizard,White,140*3,Non-elemental,Volcano,,Reflectable
+Wizard,Meteor,170*3,Earth,Giant Tree,,All enemies; reflectable
+Wizard,Flare,200*3,Fire,Pazuzu's Tower,,Reflectable

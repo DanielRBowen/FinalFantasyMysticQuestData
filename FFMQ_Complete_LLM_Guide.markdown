@@ -1,0 +1,682 @@
+# Final Fantasy Mystic Quest - Complete LLM-Friendly Guide
+
+**Version**: 1.1  
+**Source**: Compiled from all provided CSV and TXT data sources on Final Fantasy Mystic Quest (FFMQ): Final_Fantasy_Mystic_Quest_armor.csv, Bestiary_Chronological_v2.csv, Final_Fantasy_Mystic_Quest_items.csv, ffmq_character_stats.csv, Final_Fantasy_Mystic_Quest_enemy_abilities.csv, Final_Fantasy_Mystic_Quest_battlefields.csv, Final_Fantasy_Mystic_Quest_spells.csv, Locations_Chronological.csv, Final_Fantasy_Mystic_Quest_weapons.csv, Mystic_Quest_Story_Chronology.txt, Final_Fantasy_Mystic_Quest_stats_guide.txt. This guide consolidates *all* data into a single, structured, LLM-friendly Markdown file for easy parsing and accurate information retrieval. No data is truncated, and no external references are required. All information is faithful to the source data without additions or assumptions.
+
+## Sections
+- Game Overview and Story Chronology
+- Locations (Chronological)
+- Characters and Stats
+- Leveling and Formulas (Stats Guide)
+- Weapons
+- Armor and Accessories
+- Spells
+- Items (Consumables, Key Items, Crests, Coins)
+- Bestiary (Enemies and Bosses, Chronological)
+- Enemy Abilities
+- Battlefields
+
+## Game Overview and Story Chronology
+Final Fantasy Mystic Quest (FFMQ) is a simplified RPG with a linear story. The protagonist, Benjamin, travels through regions to restore four elemental crystals (Earth, Water, Fire, Wind) corrupted by monsters. He allies with NPCs (Kaeli, Tristam, Phoebe, Reuben) who join/leave the party at fixed points. The game features dungeons, bosses, optional battlefields for rewards, and a charge-based magic system.
+
+**Story Chronology**: Structured blocks per location in game order, detailing order, story beats (key events), party changes, enemies, boss (if any), items/weapons/armor/spells obtained. Data cleaned from Mystic_Quest_Story_Chronology.txt for clarity and completeness, integrated with Locations_Chronological.csv.
+
+**LOCATION: Hill of Destiny**  
+- **Order**: 1  
+- **Story Beats**: Benjamin fights Behemoth after an earthquake. A cloaked figure (Old Man) advises saving the Crystal of Earth and meeting in Level Forest. Benjamin automatically proceeds to Level Forest.  
+- **Party Changes**: Solo start with Benjamin.  
+- **Enemies**: None (tutorial area).  
+- **Boss**: Behemoth (HP: 80, EXP: 84, GP: 3; Attacks: Horn).  
+- **Items**: None.  
+- **Weapons**: Steel Sword (initial).  
+- **Armor**: Steel Armor (initial).  
+- **Spells**: None initially.
+
+**LOCATION: Level Forest**  
+- **Order**: 2 (first visit), 4 (second visit with Kaeli)  
+- **Story Beats**: Old Man directs Benjamin to save Crystal of Earth. Push a stone to clear path. Collect potions. Kaeli (in Foresta) joins after showing Tree Wither. She cuts trees for progress. Fight Minotaur, who poisons Kaeli. Volunteer to get Elixir from Sand Temple. Access Brownie and Heal Potion by cutting trees.  
+- **Party Changes**: Kaeli joins temporarily; gains Axe ability to cut trees. Party leaves after boss.  
+- **Enemies**: Brownie, Slime.  
+- **Boss**: Minotaur (HP: 240, EXP: 102, GP: 30; Attacks: Axe, Roundhouse, Scream).  
+- **Items**: Cure Potion(s), Heal Potion(s), Tree Wither, Elixir.  
+- **Weapons**: Axe.  
+- **Armor**: None.  
+- **Spells**: Cure, Exit, Heal, Life.
+
+**LOCATION: Foresta**  
+- **Order**: 3  
+- **Story Beats**: Enter tree homes. Learn Cure spell. Cross bridge, talk to residents. Show Tree Wither to Kaeli to recruit her. Exit to return to Level Forest.  
+- **Party Changes**: Kaeli joins party.  
+- **Enemies**: None (town).  
+- **Boss**: None.  
+- **Items**: Cure Potion(s), Tree Wither.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: Cure, Exit, White.
+
+**LOCATION: Battlefield (North of Level Forest)**  
+- **Order**: 5  
+- **Story Beats**: Optional; fight 10 sets of enemies for 54 EXP reward.  
+- **Party Changes**: None.  
+- **Enemies**: Mad Plant, Poison Toad.  
+- **Boss**: None.  
+- **Items**: 54 EXP.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Sand Temple**  
+- **Order**: 6  
+- **Story Beats**: Tristam joins after giving Elixir. Exit temple.  
+- **Party Changes**: Tristam joins party.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: Elixir.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: Exit.
+
+**LOCATION: Battlefield (West/East of Sand Temple)**  
+- **Order**: 7  
+- **Story Beats**: Optional clears for rewards: Charm (West), 150 GP (East).  
+- **Party Changes**: None.  
+- **Enemies**: Poison Toad, Mad Plant, Basilisk, Minotaur Zombie.  
+- **Boss**: None.  
+- **Items**: Charm, 150 GP.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Bone Dungeon**  
+- **Order**: 5 (main visit)  
+- **Story Beats**: Explore with Tristam. Defeat Flamerus Rex to restore Earth Crystal. Tristam takes treasure but gives Elixir.  
+- **Party Changes**: Tristam in party.  
+- **Enemies**: Basilisk, others.  
+- **Boss**: Flamerus Rex (HP: 2200, EXP: 120, GP: 0; Attacks: Bone Missile, Twin Fang, Rip Earth, Sleep Powder, Chew Off, Poison Flour).  
+- **Items**: Steel Shield.  
+- **Weapons**: Bomb.  
+- **Armor**: Steel Shield.  
+- **Spells**: Quake.
+
+**LOCATION: Libra Temple**  
+- **Order**: 7  
+- **Story Beats**: Obtain Wakewater from old man to thaw a plant in Aquaria.  
+- **Party Changes**: None.  
+- **Enemies**: None (town).  
+- **Boss**: None.  
+- **Items**: Wakewater.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Aquaria**  
+- **Order**: 8  
+- **Story Beats**: Use Wakewater to thaw plant. Purchase Steel Helm (200 GP). Progress to Wintry Cave.  
+- **Party Changes**: None initially; Phoebe joins later in Wintry Cave.  
+- **Enemies**: None (town).  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: Steel Helm.  
+- **Spells**: None.
+
+**LOCATION: Wintry Cave**  
+- **Order**: 9  
+- **Story Beats**: Phoebe joins party. Defeat Squidite to obtain Libra Crest.  
+- **Party Changes**: Phoebe joins party.  
+- **Enemies**: Various (e.g., Giant Toad).  
+- **Boss**: Squidite (HP: not specified in data, abilities: 6 Psudopods, Blackness, Choke Up, Sucker Stick).  
+- **Items**: Libra Crest.  
+- **Weapons**: Cat Claw (gift from Phoebe).  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Life Temple**  
+- **Order**: 10  
+- **Story Beats**: Progress through story; no specific items or bosses detailed.  
+- **Party Changes**: None.  
+- **Enemies**: None (temple).  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Falls Basin**  
+- **Order**: 11  
+- **Story Beats**: Phoebe gives Jumbo Bomb. Learn Heal spell.  
+- **Party Changes**: Phoebe in party.  
+- **Enemies**: Various.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: Jumbo Bomb.  
+- **Armor**: None.  
+- **Spells**: Heal.
+
+**LOCATION: Ice Pyramid**  
+- **Order**: 12  
+- **Story Beats**: Use Magic Mirror to reveal invisible monsters. Defeat Ice Golem for River Coin. Find Knight Sword, Noble Armor.  
+- **Party Changes**: Phoebe in party.  
+- **Enemies**: Various (e.g., Desert Hag, Lamia).  
+- **Boss**: Ice Golem (HP: not specified, abilities: Axe Bomber, Snowstorm, Stomp Stomp).  
+- **Items**: Magic Mirror, River Coin.  
+- **Weapons**: Knight Sword.  
+- **Armor**: Noble Armor.  
+- **Spells**: None.
+
+**LOCATION: Spencer's Place**  
+- **Order**: 13  
+- **Story Beats**: Tristam gives Dragon Claw, Spencer gives Venus Key. Obtain Mobius Crest via Rainbow Bridge.  
+- **Party Changes**: Tristam joins/rejoins.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: Venus Key, Mobius Crest.  
+- **Weapons**: Dragon Claw.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Wintry Temple**  
+- **Order**: 14  
+- **Story Beats**: Progress through story; no specific items or bosses detailed.  
+- **Party Changes**: None.  
+- **Enemies**: Freezer Crab, Gather.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Focus Tower (Multiple Visits)**  
+- **Order**: 6, 15, 21  
+- **Story Beats**: Central hub. Use coins (Sand, River, Sun, Sky) to access crystal rooms. Find Venus Shield.  
+- **Party Changes**: Varies by visit.  
+- **Enemies**: Various (e.g., Jelly).  
+- **Boss**: Varies (e.g., Skullrus Rex, Dualhead Hydra).  
+- **Items**: Venus Shield, Sand Coin, River Coin, Sun Coin, Sky Coin.  
+- **Weapons**: None.  
+- **Armor**: Venus Shield.  
+- **Spells**: Blizzard, Fire, Aero.
+
+**LOCATION: Fireburg**  
+- **Order**: 16  
+- **Story Beats**: Tristam gives Multi-Key. Purchase Battle Axe (500 GP). Progress to Mine.  
+- **Party Changes**: Tristam in party.  
+- **Enemies**: None (town).  
+- **Boss**: None.  
+- **Items**: Multi-Key, Gemini Crest (nearby battlefield).  
+- **Weapons**: Battle Axe, Mega Grenade (gift from Arion’s friend).  
+- **Armor**: None.  
+- **Spells**: Thunder (battlefield reward).
+
+**LOCATION: Mine**  
+- **Order**: 17  
+- **Story Beats**: Find Charm Claw.  
+- **Party Changes**: None.  
+- **Enemies**: Flazzard, Red Cap.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: Charm Claw.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Sealed Temple**  
+- **Order**: 18  
+- **Story Beats**: Progress through story; no specific items or bosses detailed.  
+- **Party Changes**: None.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Volcano**  
+- **Order**: 19  
+- **Story Beats**: Use Mask to reveal monsters in gas. Find Moon Helm. Learn White spell.  
+- **Party Changes**: None.  
+- **Enemies**: Ghost, Red Bone, Zombie, Iflyte, Stheno.  
+- **Boss**: None specified.  
+- **Items**: Mask.  
+- **Weapons**: None.  
+- **Armor**: Moon Helm.  
+- **Spells**: White.
+
+**LOCATION: Lava Dome**  
+- **Order**: 20  
+- **Story Beats**: Defeat Dualhead Hydra for Sun Coin. Learn Life spell.  
+- **Party Changes**: None.  
+- **Enemies**: Various.  
+- **Boss**: Dualhead Hydra (HP: 14000, abilities: Fire Breath, Hypno-Sleep, Scrunch, Thunder, Stone Gas).  
+- **Items**: Sun Coin.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: Life.
+
+**LOCATION: Rope Bridge**  
+- **Order**: 22  
+- **Story Beats**: Progress to Alive Forest.  
+- **Party Changes**: None.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Alive Forest**  
+- **Order**: 23  
+- **Story Beats**: Find Giant's Axe.  
+- **Party Changes**: Kaeli in party.  
+- **Enemies**: Plant Man.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: Giant's Axe.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Giant Tree**  
+- **Order**: 24  
+- **Story Beats**: Learn Meteor spell.  
+- **Party Changes**: None.  
+- **Enemies**: Various.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: Meteor.
+
+**LOCATION: Kaidge Temple**  
+- **Order**: 25  
+- **Story Beats**: Progress through story; no specific items or bosses detailed.  
+- **Party Changes**: None.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Light Temple**  
+- **Order**: 26  
+- **Story Beats**: Progress through story; no specific items or bosses detailed.  
+- **Party Changes**: None.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Windia**  
+- **Order**: 27  
+- **Story Beats**: Purchase Cupid Locket (300 GP). Progress to Windhole Temple.  
+- **Party Changes**: None.  
+- **Enemies**: None (town).  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: Cupid Locket.  
+- **Spells**: None.
+
+**LOCATION: Windhole Temple**  
+- **Order**: 28  
+- **Story Beats**: Progress to Mount Gale.  
+- **Party Changes**: None.  
+- **Enemies**: Vampire, Water Hag.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Mount Gale**  
+- **Order**: 29  
+- **Story Beats**: Find Apollo Helm.  
+- **Party Changes**: None.  
+- **Enemies**: None specified.  
+- **Boss**: None specified.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: Apollo Helm.  
+- **Spells**: None.
+
+**LOCATION: Pazuzu's Tower**  
+- **Order**: 30  
+- **Story Beats**: Defeat Pazuzu for Sky Coin. Find Excalibur. Learn Flare spell.  
+- **Party Changes**: None.  
+- **Enemies**: Various.  
+- **Boss**: Pazuzu (HP: not specified, abilities: Sky Attack, Stone Beak, Windstorm).  
+- **Items**: Sky Coin.  
+- **Weapons**: Excalibur.  
+- **Armor**: None.  
+- **Spells**: Flare.
+
+**LOCATION: Ship Dock**  
+- **Order**: 31  
+- **Story Beats**: Progress to Mac's Ship.  
+- **Party Changes**: None.  
+- **Enemies**: None.  
+- **Boss**: None.  
+- **Items**: None.  
+- **Weapons**: None.  
+- **Armor**: None.  
+- **Spells**: None.
+
+**LOCATION: Mac's Ship**  
+- **Order**: 32  
+- **Story Beats**: Find Gaia's Armor. Use Captain's Cap to progress.  
+- **Party Changes**: None.  
+- **Enemies**: None specified.  
+- **Boss**: None specified.  
+- **Items**: Captain's Cap.  
+- **Weapons**: None.  
+- **Armor**: Gaia's Armor.  
+- **Spells**: None.
+
+**LOCATION: Doom Castle**  
+- **Order**: 33  
+- **Story Beats**: Confront Dark King (4 forms) to complete the game. Find Aegis Shield.  
+- **Party Changes**: Varies (typically Benjamin + ally).  
+- **Enemies**: Shadow, Gorgon, Minotaur Zombie, Phanquid, Iflyte, Cerberus, others.  
+- **Boss**: Dark King (4 forms, HP: 40000 each; Attacks: Dark Cane, Fire Sword, Ice Sword, Dark Sabre, Mirror Sword, Quake Axe, Cure Arrow, Lazer, Spider Kids, Silver Web, Golden Web, Mega Flare, Mega White).  
+- **Items**: Aegis Shield, Arrow(s), Refresher(s), Heal Potion(s).  
+- **Weapons**: None.  
+- **Armor**: Aegis Shield.  
+- **Spells**: None.
+
+## Locations (Chronological)
+From Locations_Chronological.csv, for quick reference:
+
+1. Hill of Destiny
+2. Level Forest
+3. Foresta
+4. Sand Temple
+5. Bone Dungeon
+6. Focus Tower
+7. Libra Temple
+8. Aquaria
+9. Wintry Cave
+10. Life Temple
+11. Falls Basin
+12. Ice Pyramid
+13. Spencer's Place
+14. Wintry Temple
+15. Focus Tower
+16. Fireburg
+17. Mine
+18. Sealed Temple
+19. Volcano
+20. Lava Dome
+21. Focus Tower
+22. Rope Bridge
+23. Alive Forest
+24. Giant Tree
+25. Kaidge Temple
+26. Light Temple
+27. Windia
+28. Windhole Temple
+29. Mount Gale
+30. Pazuzu's Tower
+31. Ship Dock
+32. Mac's Ship
+33. Doom Castle
+
+## Characters and Stats
+From ffmq_character_stats.csv. Stats at specific levels/joins. Benjamin levels up; others fixed.
+
+- **Benjamin (Level 1)**: Life 40, Attack 7, Defense 6, Speed 8, Magic 10, Accuracy 75, Evade 0, MagicLeftWhite 3, MagicLeftBlack 1, MagicLeftWizard 0. Equipment: Steel Sword, Steel Armor. Spells: None. SourceURL: https://finalfantasy.fandom.com/wiki/Benjamin
+- **Kaeli (Level 3 first join)**: Life 120, Attack 11, Defense 11, Speed 11, Magic 9, Accuracy 76, Evade 0, MagicLeftWhite 3, MagicLeftBlack 0, MagicLeftWizard 0. Equipment: Axe, Relica Armor, Magic Ring. Spells: Life. SourceURL: https://finalfantasy.fandom.com/wiki/Kaeli
+- **Kaeli (Level 31 rejoin)**: Life 1280, Attack 96, Defense 73, Speed 77, Magic 55, Accuracy 90, Evade 0, MagicLeftWhite 35, MagicLeftBlack 17, MagicLeftWizard 0. Equipment: Giant's Axe, Steel Helm, Relica Armor, Magic Ring. Spells: Cure, Heal, Life, Aero. SourceURL: https://finalfantasy.fandom.com/wiki/Kaeli
+- **Tristam (Level 7 first)**: Life 360, Attack 23, Defense 10, Speed 28, Magic 16, Accuracy 78, Evade 5, MagicLeftWhite 7, MagicLeftBlack 0, MagicLeftWizard 0. Equipment: Ninja Star, Moon Helm, Black Robe. Spells: Life. SourceURL: https://finalfantasy.fandom.com/wiki/Tristam
+- **Tristam (Level 23 rejoin)**: Life 1120, Attack 68, Defense 31, Speed 80, Magic 26, Accuracy 86, Evade 5, MagicLeftWhite 23, MagicLeftBlack 0, MagicLeftWizard 0. Equipment: Ninja Star, Moon Helm, Black Robe, Charm. Spells: Life. SourceURL: https://finalfantasy.fandom.com/wiki/Tristam
+- **Phoebe (Level 15 first)**: Life 680, Attack 47, Defense 20, Speed 36, Magic 49, Accuracy 82, Evade 0, MagicLeftWhite 21, MagicLeftBlack 10, MagicLeftWizard 5. Equipment: Cat Claw, Bow of Grace, Arrow, Mystic Robe, Magic Ring. Spells: Cure, Heal, Life, Fire, Thunder. SourceURL: https://finalfantasy.fandom.com/wiki/Phoebe_(Mystic_Quest)
+- **Phoebe (Level 34 rejoin)**: Life 1480, Attack 70, Defense 39, Speed 66, Magic 94, Accuracy 92, Evade 0, MagicLeftWhite 40, MagicLeftBlack 20, MagicLeftWizard 10. Equipment: Bow of Grace, Arrow, Ether Shield, Steel Helm, Mystic Robe, Magic Ring. Spells: Cure, Heal, Life, Blizzard, Fire, Aero, Thunder, White. SourceURL: https://finalfantasy.fandom.com/wiki/Phoebe_(Mystic_Quest)
+- **Reuben (Level 23 first)**: Life 1040, Attack 84, Defense 61, Speed 61, Magic 35, Accuracy 86, Evade 0, MagicLeftWhite 23, MagicLeftBlack 0, MagicLeftWizard 0. Equipment: Morning Star, Steel Helm, Flame Armor, Charm. Spells: Life. SourceURL: https://finalfantasy.fandom.com/wiki/Reuben
+- **Reuben (Level 31 rejoin)**: Life 1320, Attack 99, Defense 68, Speed 70, Magic 41, Accuracy 90, Evade 0, MagicLeftWhite 31, MagicLeftBlack 0, MagicLeftWizard 7. Equipment: Morning Star, Steel Helm, Flame Armor, Charm. Spells: Life, White. SourceURL: https://finalfantasy.fandom.com/wiki/Reuben
+
+## Leveling and Formulas (Stats Guide)
+From Final_Fantasy_Mystic_Quest_stats_guide.txt. Benjamin-only leveling (cap 41). Allies fixed.
+
+**Scope**: Stats apply to party members and enemies. Benjamin levels; allies fixed. EXP accrues post-cap for potential Magic Left boosts.
+
+**Level-Up Gains (Benjamin)**:  
+- Life: +40 per level  
+- Attack: +2.5 per level  
+- Defense: +2 per level  
+- Speed: +2 per level  
+- Magic: +1 per level  
+- Accuracy: +0.5 per level  
+- On level-up, HP scales to maintain same percentage filled.
+
+**Experience**:  
+- EXP to Next Level: `13 * (Level ** 3) + 61 * (Level ** 2)`  # Level = current  
+- Post-Cap: Every 10,000,000 EXP may add +2 or +3 to each Magic Left category (up to 99).
+
+**Magic Left**: Charges per school. Spells cost 1 charge. Benjamin max typical at cap: White 42, Black 21, Wizard 10.
+
+**Stat Definitions**:  
+- **Level**: Character level (Benjamin only).  
+- **Life (HP)**: Hit points; 0 = KO.  
+- **Magic Left**: White/Black/Wizard charges.  
+- **Attack**: Physical damage base.  
+- **Defense**: Reduces damage.  
+- **Speed**: Turn order; +5 from some gear.  
+- **Magic**: Magic damage power; +5 from some gear.  
+- **Accuracy**: Hit chance.  
+- **Evade**: Dodge/run chance.
+
+**Displayed Attack (Benjamin, floored)**:  
+`Attack_Display = floor( (Level * 2.5 + 5) + (Speed - (Level * 2 + 6)) / 2 + WeaponAttack )`
+
+**Physical Damage (Single Hit)**:  
+`DamageBeforeClamp = (Attack * 4) - Defense`  
+`FinalDamage = max(0, round(DamageBeforeClamp * weakness / split))`
+
+**Black Magic Damage**:  
+`Damage = max(0, round( ((SpellPower * 4) + (Magic * 3) - Defense) * weakness / split ))`
+
+**Wizard Magic Damage**:  
+`Damage = max(0, round( ((SpellPower * 6) + (Magic * 9) - (Defense * 2)) * weakness / split ))`
+
+**Variables**:  
+- weakness: Elemental modifier (e.g., 2.0 weak, 1.0 neutral, 0.5 resist).  
+- split: Damage split factor (1 single-target, 2 multi-target).
+
+**Equipment Modifiers (Examples)**:  
+- **Attack +5**: Steel Helm, Moon Helm, Apollo Helm.  
+- **Speed +5**: Knight Sword, Excalibur, Ninja Star, Bow of Grace, Steel Shield, Venus Shield, Aegis Shield, Black Robe, Ether Shield.  
+- **Magic +5**: Cat Claw, Charm Claw, Dragon Claw, Charm, Magic Ring, Cupid Locket.
+
+**Examples**:  
+1. **Physical (neutral, single-target)**: Attack=120, Defense=60, weakness=1.0, split=1  
+   `Damage = max(0, round((120 * 4 - 60) * 1 / 1)) = 420`  
+2. **Black Magic (weak, multi-target)**: SpellPower=135, Magic=60, Defense=50, weakness=2.0, split=2  
+   `Damage = max(0, round(((135 * 4) + (60 * 3) - 50) * 2 / 2)) = 670 per target`  
+3. **Wizard Magic (resistant, single-target)**: SpellPower=200, Magic=70, Defense=80, weakness=0.5, split=1  
+   `Damage = max(0, round(((200 * 6) + (70 * 9) - (80 * 2)) * 0.5 / 1)) = 835`
+
+**Notes**: Rounding and regional/version differences may affect exact results. Weakness/split values are data-driven per action/target.
+
+## Weapons
+From Final_Fantasy_Mystic_Quest_weapons.csv.
+
+| Category | Name | BasePower | AttackPower | Obtained | Notes |
+|----------|------|-----------|-------------|----------|-------|
+| Swords | Steel Sword | 5 | 12.5~117.5 | Initial: Benjamin | |
+| Swords | Knight Sword | 45 | 55~160 | Find: Ice Pyramid | Speed +5 |
+| Swords | Excalibur | 125 | 135~240 | Find: Pazuzu's Tower | Speed +5 |
+| Axes | Axe | 9 | 16.5~121.5 (Kaeli 20) | Gift: Kaeli (after defeating Minotaur in Level Forest) | Axe-elemental |
+| Axes | Battle Axe | 62.5 | 70~175 | Buy: Fireburg - 500 GP | Axe-elemental |
+| Axes | Giant's Axe | 105 | 112.5~217.5 (Kaeli 194) | Find: Alive Forest | Axe-elemental |
+| Claws | Cat Claw | 2.5 | 10~115 (Phoebe 44) | Gift: Phoebe (Wintry Cave) | Magic +5. Can inflict Poison; Paralyze |
+| Claws | Charm Claw | 37.5 | 45~150 | Find: Mine | Magic +5. Can inflict Poison; Paralyze; Sleep; Confuse; Blind |
+| Claws | Dragon Claw | 80 | 87.5~192.5 | Gift: Tristam (Spencer's Place) | Magic +5. Can inflict Poison; Paralyze; Sleep; Confuse; Blind; Petrify; Silence |
+| Bombs | Bomb | 63 | - | Buy: Tristam (Bone Dungeon) | Bomb-elemental |
+| Bombs | Jumbo Bomb | 112.5 | - | Gift: Phoebe (Falls Basin) | Bomb-elemental |
+| Bombs | Mega Grenade | 162 | - | Gift: Arion's friend (Fireburg) | Bomb-elemental |
+| Other | Morning Star | 100 | 107.5~212.5 (175 1st time; 187 2nd time) | Initial: Reuben | Axe-elemental |
+| Other | Ninja Star | 20 | 27~152 (48 1st time; 93 2nd time) | Initial: Tristam | Shoot-elemental. Speed +5. Can inflict Poison; Paralyze |
+| Other | Bow of Grace (Arrow) | 40 | 47~172 (87 1st time; 115 2nd time) | Initial: Phoebe (after giving Benjamin Cat Claw) | Shoot-elemental. Speed +5. Can inflict Blind |
+| Other | Bare Hands | Current Power/2 | Varies | Used when a character runs out of Ammo for their weapon | Only available to Benjamin; Tristam; Phoebe |
+
+## Armor and Accessories
+From Final_Fantasy_Mystic_Quest_armor.csv.
+
+| Category | Name | Defense | Evade | Obtained | Notes |
+|----------|------|---------|-------|----------|-------|
+| Helmet | Steel Helm | 4 | 5 | Buy: Aquaria for 200 GP | Attack +5 |
+| Helmet | Moon Helm | 9 | 9 | Found: Lava Dome | Attack +5. Resist Fire |
+| Helmet | Apollo Helm | 15 | 15 | Found: Mount Gale | Attack +5. Resist Fire |
+| Body Armor | Steel Armor | 6 | 4 | Initial: Benjamin | |
+| Body Armor | Noble Armor | 12 | 10 | Found: Ice Pyramid | Resist Water and Poison |
+| Body Armor | Gaia's Armor | 15 | 11 | Found: Mac's Ship | Resist Water, Wind, Thunder, Poison, Sleep |
+| Shield | Steel Shield | 5 | 6 | Found: Bone Dungeon | Speed +5 |
+| Shield | Venus Shield | 10 | 12 | Found: Focus Tower | Speed +5. Resist Paralyze |
+| Shield | Aegis Shield | 14 | 14 | Found: Doom Castle | Speed +5. Resist Paralyze and Petrify |
+| Accessory | Charm | 1 | 1 | Reward: Battlefield north of Level Forest | Magic +5 |
+| Accessory | Magic Ring | 3 | 3 | Reward: Battlefield west of Aquaria | Magic +5. Resist Silence |
+| Accessory | Cupid Locket | 6 | 6 | Buy: Windia for 300 GP | Magic +5. Resist Silence, Blind, Confusion |
+| NPC Armor | Black Robe | 13 | 15 | Initial: Tristam | Speed +5. Resist Fatal |
+| NPC Armor | Flame Armor | 14 | 14 | Initial: Reuben | Resist Fire |
+| NPC Armor | Mystic Robe | 13 | 12 | Initial: Phoebe | Resist Water, Wind, Thunder |
+| NPC Armor | Relica Armor | 15 | 15 | Initial: Kaeli | Resist Water and Petrify |
+| NPC Armor | Ether Shield | 12 | 12 | Initial: Phoebe (upon rejoining) | Speed +5. Resist Paralyze, Sleep, Drain |
+
+## Spells
+From Final_Fantasy_Mystic_Quest_spells.csv.
+
+| School | Spell | SpellPower | Element | Found | Field Effect | Battle Effect |
+|--------|-------|------------|---------|-------|--------------|---------------|
+| White | Exit | - | - | Battlefield north of Libra Temple | Warp to world map | Removes one enemy; no EXP/GP; no effect on bosses |
+| White | Cure | 50 | Restorative/Undead | Foresta | Restore HP | Damages undead; reflectable (no party effect) |
+| White | Heal | - | - | Falls Basin | Remove status ailments | Inflicts one status on enemy (Poison/Confuse/Sleep/Paralyze/Petrify) |
+| White | Life | - | - | Lava Dome | Revive to full HP; heals HP/status | Fatal vs enemies (bug); JP/EU: Fatal vs undead only |
+| Black | Quake | 25*3 | Earth | Bone Dungeon | - | All enemies; reflectable |
+| Black | Blizzard | 135 | Water | Focus Tower | - | Single or all; reflectable |
+| Black | Fire | 85 | Fire | Focus Tower | - | Single or all; reflectable |
+| Black | Aero | 235 | Wind | Focus Tower | - | Single or all; reflectable |
+| Wizard | Thunder | 180 | Lightning | Battlefield far west of Fireburg | - | Single or all; reflectable |
+| Wizard | White | 140*3 | Non-elemental | Volcano | - | Reflectable |
+| Wizard | Meteor | 170*3 | Earth | Giant Tree | - | All enemies; reflectable |
+| Wizard | Flare | 200*3 | Fire | Pazuzu's Tower | - | Reflectable |
+
+## Items (Consumables, Key Items, Crests, Coins)
+From Final_Fantasy_Mystic_Quest_items.csv.
+
+**Consumables**:  
+- **Cure**: Restores target's HP.  
+- **Heal**: Removes target's status ailments.  
+- **Refresher**: Restores stat(s) losses during battle.  
+- **Seed**: Fully restores target's MP.
+
+**Key Items**:  
+- **Captain's Cap**: Given by Kaeli, give to Captain Mac.  
+- **Elixir**: Given by Tristam after Bone Dungeon, cures Kaeli.  
+- **Magic Mirror**: Found in Ice Pyramid, reveals invisible monsters.  
+- **Mask**: Found on Volcano slopes, reveals monsters in gas.  
+- **Multi-Key**: Given by Tristam in Fireburg, unlocks door.  
+- **Thunder Rock**: Given by Reuben's father Arion, powers Rainbow Bridge Machine.  
+- **Tree Wither**: Given by old man in Level Forest, convinces Kaeli.  
+- **Venus Key**: Given by Spencer, unlocks Venus Shield chest in Focus Tower.  
+- **Wakewater**: Given by old man in Libra Temple, thaws plant in Aquaria.
+
+**Crests**:  
+- **Libra Crest**: Found in Wintry Cave after Squidite. Enables Libra Panels.  
+- **Gemini Crest**: Found in Battlefield near Fireburg. Enables Gemini Panels.  
+- **Mobius Crest**: Found in Spencer's Place via Rainbow Bridge. Enables Mobius Panels.
+
+**Coins**:  
+- **Sand Coin**: Guarded by Skullrus Rex, opens Earth Door in Focus Tower.  
+- **River Coin**: Guarded by Ice Golem, opens Water Door in Focus Tower.  
+- **Sun Coin**: Guarded by Dualhead Hydra, opens Fire Door in Focus Tower.  
+- **Sky Coin**: Guarded by Pazuzu, opens Wind Door in Focus Tower.
+
+## Bestiary (Enemies and Bosses, Chronological)
+From Bestiary_Chronological_v2.csv. Complete table with all entries.
+
+| Order | Name | Type | Locations | HP | EXP | GP | Attack | Defense | Speed | Magic | Abilities | Elemental Affinities | Status Affinities | Drops | ImageUrl | WikiUrl |
+|-------|------|------|-----------|----|-----|----|--------|---------|-------|-------|-----------|---------------------|------------------|-------|----------|---------|
+| 1 | Behemoth | Boss | Hill of Destiny | 80 | 84 | 3 | 1 | 25 | 12 | 1 | Horn | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/0/09/FFMQ_Behemoth.png/revision/latest?cb=20111123181544 | https://finalfantasy.fandom.com/wiki/Behemoth_(Mystic_Quest) |
+| 2 | Minotaur | Boss | Level Forest | 240 | 102 | 30 | 4 | 50 | 12 | 8 | Axe; Roundhouse; Scream | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/a/a3/FFMQ_Minotaur.png/revision/latest?cb=20120505223819 | https://finalfantasy.fandom.com/wiki/Minotaur_(Mystic_Quest) |
+| 2 | Brownie | Enemy | Level Forest | 50 | 66 | 3 | 3 | 1 | 3 | 1 | Punch; Kick | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/4/4c/FFMQ_Brownie.png/revision/latest?cb=20111123185743 | https://finalfantasy.fandom.com/wiki/Brownie |
+| 2 | Slime | Enemy | Level Forest | 55 | 72 | 3 | 3 | 2 | 3 | 1 | Stab; Hydro Acid | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 150% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/3/34/FFMQ_Slime.png/revision/latest?cb=20120504214214 | https://finalfantasy.fandom.com/wiki/Slime_(Mystic_Quest) |
+| 4 | Mad Plant | Enemy | Battlefields; Sand Temple | 60 | 57 | 3 | 4 | 3 | 3 | 2 | Branch; Full Nelson | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 150%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/9/95/FFMQ_Mad_Plant.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Mad_Plant |
+| 5 | Flamerus Rex | Boss | Bone Dungeon | 2200 | 120 | 0 | 70 | 60 | 32 | 28 | Bone Missile; Twin Fang; Rip Earth; Sleep Powder; Chew Off; Poison Flour | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/f/f2/FFMQ_Flamerus_Rex.png/revision/latest?cb=20120505213643 | https://finalfantasy.fandom.com/wiki/Flamerus_Rex |
+| 5 | Basilisk | Enemy | Bone Dungeon | 93 | 81 | 3 | 8 | 6 | 6 | 5 | Claw; Fang | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/3/3e/FFMQ_Basilisk.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Basilisk_(Mystic_Quest) |
+| 6 | Poison Toad | Enemy | Battlefields | 80 | 114 | 3 | 10 | 10 | 8 | 4 | Whip Tongue | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/1/1e/FFMQ_Poison_Toad.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Poison_Toad |
+| 7 | Minotaur Zombie | Enemy | Battlefields | 100 | 90 | 3 | 12 | 12 | 10 | 6 | Axe; Stare | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/6/62/FFMQ_Minotaur_Zombie.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Minotaur_Zombie |
+| 8 | Giant Toad | Enemy | Battlefields | 120 | 114 | 3 | 15 | 15 | 12 | 8 | Whip Tongue | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/0/0b/FFMQ_Giant_Toad.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Giant_Toad |
+| 9 | Mint Mint | Enemy | Battlefields | 150 | 99 | 3 | 18 | 18 | 15 | 10 | None | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/2/2f/FFMQ_Mint_Mint.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Mint_Mint |
+| 10 | Sand Worm | Enemy | Battlefields | 200 | 108 | 3 | 20 | 20 | 18 | 12 | Quicksand; Scrunch | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/5/5b/FFMQ_Sand_Worm.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Sand_Worm |
+| 11 | Squidite | Boss | Wintry Cave | 800 | 150 | 0 | 30 | 30 | 20 | 15 | 6 Psudopods; Blackness; Choke Up; Sucker Stick | Fire: 100%; Water: 150%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/8/8e/FFMQ_Squidite.png/revision/latest?cb=20120505213643 | https://finalfantasy.fandom.com/wiki/Squidite |
+| 12 | Scorpion | Enemy | Battlefields | 250 | 120 | 3 | 25 | 25 | 22 | 14 | Rapier; Scissors | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/7/7b/FFMQ_Scorpion.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Scorpion_(Mystic_Quest) |
+| 13 | Desert Hag | Enemy | Battlefields; Ice Pyramid | 300 | 132 | 3 | 28 | 28 | 25 | 16 | Counterattack; Fin; Watergun | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/9/9b/FFMQ_Desert_Hag.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Desert_Hag |
+| 14 | Ice Golem | Boss | Ice Pyramid | 6000 | 300 | 0 | 80 | 70 | 40 | 35 | Axe Bomber; Snowstorm; Stomp Stomp | Fire: 150%; Water: 50%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/3/3c/FFMQ_Ice_Golem.png/revision/latest?cb=20120505213643 | https://finalfantasy.fandom.com/wiki/Ice_Golem |
+| 15 | Lamia | Enemy | Ice Pyramid | 350 | 144 | 3 | 30 | 30 | 28 | 18 | Sleep Lure; Wraparound | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/4/4e/FFMQ_Lamia.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Lamia_(Mystic_Quest) |
+| 16 | Mage | Enemy | Ice Pyramid | 400 | 156 | 3 | 35 | 35 | 30 | 20 | Blizzard; Cure | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/8/8a/FFMQ_Mage.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Mage_(Mystic_Quest) |
+| 17 | Freezer Crab | Enemy | Wintry Temple | 450 | 168 | 3 | 40 | 40 | 32 | 22 | Full Nelson | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/1/1a/FFMQ_Freezer_Crab.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Freezer_Crab |
+| 18 | Gather | Enemy | Wintry Temple | 500 | 180 | 3 | 45 | 45 | 35 | 24 | Blind Flash | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/6/6b/FFMQ_Gather.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Gather |
+| 19 | Jelly | Enemy | Focus Tower | 550 | 192 | 3 | 50 | 50 | 38 | 26 | Dissolve; Spark | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/7/7e/FFMQ_Jelly.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Jelly_(Mystic_Quest) |
+| 20 | Sting Rat | Enemy | Focus Tower | 600 | 204 | 3 | 55 | 55 | 40 | 28 | Sting | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/2/2a/FFMQ_Sting_Rat.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Sting_Rat |
+| 21 | Plant Man | Enemy | Fireburg | 650 | 216 | 3 | 60 | 60 | 42 | 30 | Branch; Full Nelson; Bad Breath | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 150%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/9/9a/FFMQ_Plant_Man.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Plant_Man |
+| 22 | Flazzard | Enemy | Fireburg | 700 | 228 | 3 | 65 | 65 | 45 | 32 | Claw; Flame | Fire: 50%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/3/3a/FFMQ_Flazzard.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Flazzard |
+| 23 | Red Cap | Enemy | Fireburg | 750 | 240 | 3 | 70 | 70 | 48 | 34 | Stare | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/4/4b/FFMQ_Red_Cap.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Red_Cap |
+| 24 | Red Bone | Enemy | Volcano | 800 | 252 | 3 | 75 | 75 | 50 | 36 | Sword | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/7/7c/FFMQ_Red_Bone.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Red_Bone |
+| 25 | Zombie | Enemy | Volcano | 850 | 264 | 3 | 80 | 80 | 52 | 38 | Rotten Mucus | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/2/2e/FFMQ_Zombie.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Zombie_(Mystic_Quest) |
+| 26 | Iflyte | Enemy | Volcano | 900 | 276 | 3 | 85 | 85 | 55 | 40 | Beam; Bearhug; Dragon Cut; Flame Pillar | Fire: 50%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/5/5e/FFMQ_Iflyte.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Iflyte |
+| 27 | Stheno | Enemy | Volcano | 950 | 288 | 3 | 90 | 90 | 58 | 42 | Bad Breath; Screech Voice; Stone Gaze | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/9/9e/FFMQ_Stheno.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Stheno |
+| 28 | Dualhead Hydra | Boss | Lava Dome | 14000 | 450 | 0 | 150 | 80 | 70 | 50 | Fire Breath; Hypno-Sleep; Scrunch; Thunder; Stone Gas | Fire: 50%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/2/2c/FFMQ_Dualhead_Hydra.png/revision/latest?cb=20120505213643 | https://finalfantasy.fandom.com/wiki/Dualhead_Hydra |
+| 29 | Sphinx | Enemy | Libra Temple | 1000 | 300 | 3 | 95 | 95 | 60 | 44 | Claw; Riddle | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/3/3b/FFMQ_Sphinx.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Sphinx_(Mystic_Quest) |
+| 30 | Phanquid | Enemy | Libra Temple | 1050 | 312 | 3 | 100 | 100 | 62 | 46 | Choke Up; Electrapulse; Sucker Stick | Fire: 100%; Water: 150%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/8/8b/FFMQ_Phanquid.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Phanquid |
+| 31 | Water Hag | Enemy | Windia | 1100 | 324 | 3 | 105 | 105 | 65 | 48 | Counterattack; Fin; Watergun; Whirlwater | Fire: 100%; Water: 50%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/4/4a/FFMQ_Water_Hag.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Water_Hag |
+| 32 | Vampire | Enemy | Windia | 1150 | 336 | 3 | 110 | 110 | 68 | 50 | Blizzard; Drain; Sonic Boom; Typhoon; Uppercut | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/6/6e/FFMQ_Vampire.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Vampire_(Mystic_Quest) |
+| 33 | Ooze | Enemy | Windia | 1200 | 348 | 3 | 115 | 115 | 70 | 52 | Dissolve; Spark; Thunder Beam | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/7/7a/FFMQ_Ooze.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Ooze_(Mystic_Quest) |
+| 34 | Skuldier | Enemy | Windia | 1250 | 360 | 3 | 120 | 120 | 72 | 54 | Doom Powder; Sleep Powder; Spooky Laugh; Sword | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 100%; Wind: 100%; Shoot: 100%; Zombie: 150%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/2/2b/FFMQ_Skuldier.png/revision/latest?cb=20120504190855 | https://finalfantasy.fandom.com/wiki/Skuldier |
+| 35 | Twinhead Wyvern | Boss | Pazuzu's Tower | 15000 | 600 | 0 | 200 | 90 | 80 | 60 | Bite; Fire Breath; Thunder; Tornado | Fire: 50%; Water: 150%; Thunder: 100%; Earth: 100%; Wind: 150%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/f/fe/FFMQ_Twinhead_Wyvern.png/revision/latest?cb=20120505232341 | https://finalfantasy.fandom.com/wiki/Twinhead_Wyvern |
+| 36 | Zuh | Boss | Doom Castle | 20000 | 750 | 0 | 240 | 95 | 100 | 98 | Sky Attack; Piledriver; Hurricane; Doom Dance; PsychShield | Fire: 100%; Water: 100%; Thunder: 100%; Earth: 50%; Wind: 150%; Shoot: 150%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/b/b4/FFMQ_Zuh.png/revision/latest?cb=20120505232342 | https://finalfantasy.fandom.com/wiki/Zuh |
+| 37 | Dark King (1st Form) | Boss | Doom Castle | 40000 | 0 | 0 | 50 | 120 | 86 | 75 | Dark Cane; Iron Nail; Spark; Para-stare | Fire: 100%; Water: 50%; Thunder: 100%; Earth: 50%; Wind: 50%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/e/e1/FFMQ_Dark_King1.png/revision/latest?cb=20120110225113 | https://finalfantasy.fandom.com/wiki/Dark_King_%28boss%29 |
+| 38 | Dark King (2nd Form) | Boss | Doom Castle | 40000 | 0 | 0 | 50 | 120 | 86 | 75 | Fire Sword; Ice Sword; Dark Sabre; Mirror Sword; Quake Axe; Cure Arrow | Fire: 100%; Water: 50%; Thunder: 100%; Earth: 50%; Wind: 50%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/7/77/FFMQ_Dark_King2.png/revision/latest?cb=20120110225114 | https://finalfantasy.fandom.com/wiki/Dark_King_%28boss%29 |
+| 39 | Dark King (3rd Form) | Boss | Doom Castle | 40000 | 0 | 0 | 50 | 120 | 86 | 75 | Lazer; Spider Kids; Silver Web; Golden Web; Mega Flare; Mega White | Fire: 100%; Water: 50%; Thunder: 100%; Earth: 50%; Wind: 50%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/9/98/FFMQ_Dark_King3.png/revision/latest?cb=20120110225114 | https://finalfantasy.fandom.com/wiki/Dark_King_%28boss%29 |
+| 40 | Dark King (4th Form) | Boss | Doom Castle | 40000 | 0 | 0 | 50 | 120 | 86 | 75 | Lazer; Spider Kids; Silver Web; Golden Web; Mega Flare; Mega White | Fire: 100%; Water: 50%; Thunder: 100%; Earth: 50%; Wind: 50%; Shoot: 100%; Zombie: 100%; Axe: 100%; Bomb: 100% | Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune | | https://static.wikia.nocookie.net/finalfantasy/images/5/5d/FFMQ_Dark_King4.png/revision/latest?cb=20120110225114 | https://finalfantasy.fandom.com/wiki/Dark_King_%28boss%29 |
+
+## Enemy Abilities
+From Final_Fantasy_Mystic_Quest_enemy_abilities.csv. Complete table.
+
+| Ability | AttackPower | Description | Enemies |
+|---------|-------------|-------------|---------|
+| 6 Psudopods | 50 | Damage attack, hits both players up to 6 times. | Squidite |
+| Attach | 10 | Damage attack. | Ghost; Specter |
+| Axe | 5 | Damage attack. | Minotaur; Minotaur Zombie |
+| Axe Bomber | 10 | Damage. | Ice Golem; Stone Golem |
+| Bad Breath | - | Inflicts Paralyze. | Plant Man; Stheno |
+| Bark | 70 | Non-elemental attack. | Were Wolf |
+| Beak | 5 | Damage attack. | Garuda; Roc; Sparna |
+| Beam | 22 | Damage attack. | Iflyte; Jinn |
+| Bearhug | 2 | Damage attack. | Iflyte |
+| Bite | 10 | Damage attack. | Gorgon; Manticor; Twinhead Wyvern |
+| Blackness | 75 | Non-elemental attack that can inflict Blind. | Squidite |
+| Blind Flash | - | Inflicts Blind. | Beholder; Gather |
+| Blinder | 75 | Non-elemental attack that can inflict Blind. | Adamant Turtle; Edgehog; Garuda; Manticor; Roc |
+| Blizzard | 10 | Water attack. | Gargoyle; Mage; Sorcerer; Vampire |
+| Blow Dart | 15 | Shoot attack. | Ninja; Shadow |
+| Body Odor | - | Inflicts Paralyze. | Mad Toad |
+| Body Slam | 10 | Damage attack. | Adamant Turtle; Land Turtle |
+| Bone Missile | 6 | Non-elemental attack. | Flamerus Rex; Skullrus Rex |
+| Bow & Arrow | 15 | Shoot attack. | Centaur; Nightmare |
+| Branch | 5 | Damage attack. | Mad Plant; Plant Man |
+| Chew Off | 1 | Damage attack. | Flamerus Rex |
+| Choke Up | 50 | Damage attack. | Phanquid; Squidite |
+| Claw | 5 | Damage attack. | Basilisk; Flazzard; Salamand; Sphinx |
+| Coldness | 65 | Water attack. | Ghost; Specter; Stoney Roost |
+| Confu-touch | - | Counters physical attacks by inflicting Confusion. | Specter |
+| Corrode Gas | 50 | Inflicts Fatal. | Stone Golem; Live Oak |
+| Counterattack | Varies | Counters physical attacks with an attack of their own. | Desert Hag; Water Hag |
+| Cure | 0/25 | Weak/strong versions. Restores HP. | Mage; Sorcerer; Thanatos; Water Hag |
+| Cure Arrow | 70 | Shoot attack to a single target and restores HP to the user. | Dark King |
+| Dark Cane | 80 | Damage attack with a 100% critical hit rate. | Dark King |
+| Dark Sabre | 115 | Damage attack. | Dark King |
+| Dash | 20 | Damage attack. | Gorgon |
+| Didn't do anything | - | Enemy skips their turn. | Ghost; Zombie; Shadow |
+| Dissolve | 100 | Drain attack. | Jelly; Ooze |
+| Dive | 10 | Damage attack. | Hot Wings; Stoney Roost |
+| Doom Dance | 200

@@ -1,0 +1,21 @@
+Category,Name,Description
+Consumable,Cure,Restores target's HP.
+Consumable,Heal,Removes target's status ailments.
+Consumable,Refresher,Restores the stat(s) losses during battle.
+Consumable,Seed,Fully restores target's MP.
+Key Item,Captain's Cap,"Given by Kaeli, give to Captain Mac."
+Key Item,Elixir,"Given by Tristam after completing the Bone Dungeon, used to cure Kaeli."
+Key Item,Magic Mirror,"Found inside the Ice Pyramid, reveals the invisible monster inside the Ice Pyramid."
+Key Item,Mask,"Found on the slopes of the Volcano, reveals monsters hidden within the gas on the Volcano slopes."
+Key Item,Multi-Key,"Given by Tristam in Fireburg, used to unlock Reuben's father's friend's door."
+Key Item,Thunder Rock,"Given by Reuben's father Arion, used to power up Otto's Rainbow Bridge Machine."
+Key Item,Tree Wither,"Given by an old man in Level Forest, used to convince Kaeli to help Benjamin."
+Key Item,Venus Key,"Given by Spencer, used to unlock the chest containing the Venus Shield in the Focus Tower."
+Key Item,Wakewater,"Given by the old man in Libra Temple, used to thaw a plant in Aquaria."
+Crest,Libra Crest,"Found in the Wintry Cave after defeating Squidite. Allows Libra Panels to be used."
+Crest,Gemini Crest,"Found in a Battlefield near Fireburg. Allows Gemini Panels to be used."
+Crest,Mobius Crest,"Found in Spencer's Place via the Rainbow Bridge access. Allows Mobius Panels to be used."
+Coin,Sand Coin,"Guarded by the Skullrus Rex and opens the Earth Door found within Focus Tower."
+Coin,River Coin,"Guarded by the Ice Golem and opens the Water door found within Focus Tower."
+Coin,Sun Coin,"Guarded by the Dualhead Hydra and opens the Fire door found within Focus Tower."
+Coin,Sky Coin,"Guarded by Pazuzu and opens the Wind door found within Focus Tower."

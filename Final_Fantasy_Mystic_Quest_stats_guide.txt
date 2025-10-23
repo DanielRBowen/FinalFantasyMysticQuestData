@@ -1,0 +1,107 @@
+Final Fantasy Mystic Quest — Stats and Formulas (LLM-friendly guide)
+Source: summarized from local page WikiHtmlPages/Final_Fantasy_Mystic_Quest_stats-fetched.html (Final Fantasy Wiki, CC-BY-SA). Paraphrased; formulas expressed explicitly.
+Version: 1.0
+
+SCOPE
+- Stats apply to party members and enemies.
+- Only Benjamin levels; partners (Kaeli, Phoebe, Tristam, Reuben) are fixed-level NPCs when present.
+- Level cap: 41 (Benjamin). EXP can still accrue past the cap (see Magic Left notes).
+
+LEVEL-UP GAINS (Benjamin)
+- Per level: +40 LIFE (HP), +2.5 ATTACK, +2 DEFENSE, +2 SPEED, +1 MAGIC, +0.5 ACCURACY.
+- On level-up, current HP is scaled to keep the same percent filled (not fixed absolute value).
+
+EXPERIENCE
+- EXP is awarded after non-boss wins. Using Exit to end battles yields no EXP/GP.
+- EXP to next level (empirical): EXP_NEXT = 13*(Level^3) + 61*(Level^2). Level is current level.
+
+MAGIC LEFT (charge system)
+- All spells cost 1 charge to cast.
+- Benjamin max charges (typical at cap): White 42, Black 21, Wizard 10.
+- Allies have fixed spell sets; when they leave/rejoin later they may return with more spells learned.
+- Post-cap EXP behavior: every 10,000,000 EXP may grant +2 or +3 Magic Left in each category (up to 99 each).
+
+STAT DEFINITIONS
+- LEVEL: character level (Benjamin only).
+- LIFE (HP): hit points; 0 => Fatal (KO).
+- MAGIC LEFT: per-school remaining casts (White / Black / Wizard).
+- ATTACK: contributes to physical damage and displayed ATK stat.
+- DEFENSE: reduces incoming physical and some magic damage (see formulas).
+- SPEED: influences turn order; some equipment adds +5 SPEED.
+- MAGIC: caster power for magic damage; some weapons/accessories add +5 MAGIC.
+- ACCURACY: chance to land hits; increases by +0.5 per level.
+- EVADE: chance to run and avoid attacks.
+
+DISPLAYED ATTACK STAT (Benjamin)
+- Purpose: the in-menu ATTACK number. Weapons don’t show base values; this formula reproduces the displayed ATK.
+- Formula (floored):
+  ATTACK_DISPLAY = floor( ((Level * 2.5) + 5)
+                          + (Speed - ((Level * 2) + 6)) / 2
+                          + WeaponAttack )
+- Variables: Level = current level; Speed = current SPEED; WeaponAttack = weapon’s internal attack value; floor = round down.
+
+PHYSICAL DAMAGE (single hit)
+- DamageBeforeClamp = ((Attack * 4) - Defense)
+- Apply elemental/strength/weakness multiplier: multiply by weakness (see below)
+- Apply multi-target split: divide by split (see below)
+- Final damage = max(0, round(DamageBeforeClamp * weakness / split))
+- Variables: Attack = attacker ATTACK stat; Defense = defender DEFENSE stat.
+- weakness: elemental modifier for target (examples: 2.0 for weakness, 1.0 neutral, 0.5 resistance). Exact values vary per interaction.
+- split: damage split factor for multi-target actions. single-target => split = 1; multi-target => split ? 2.
+
+BLACK MAGIC DAMAGE
+- Formula:
+  Damage = ((SpellPower * 4) + (Magic * 3) - Defense) * weakness / split
+  Then clamp at minimum 0 and round as per engine.
+- Variables: SpellPower = spell’s base power; Magic = caster MAGIC stat; Defense = target DEFENSE; weakness and split as above.
+
+WIZARD MAGIC DAMAGE
+- Formula:
+  Damage = ((SpellPower * 6) + (Magic * 9) - (Defense * 2)) * weakness / split
+  Then clamp at minimum 0 and round as per engine.
+
+STATUS / SPECIAL NOTES
+- Exit (aka Teleport/Exit) removes an enemy with no EXP/GP reward; no effect on bosses.
+- Life (White) revives allies and is a “Fatal” instant defeat versus some enemies (regional/version quirks apply; JP/EU note: fatal vs undead only).
+- Multi-target versions of spells/skills typically apply split damage (reduced per target).
+
+EQUIPMENT MODIFIERS (examples)
+- ATTACK +5 (helms): Steel Helm, Moon Helm, Apollo Helm.
+- SPEED +5 (weapons): Knight Sword, Excalibur, Ninja Star, Bow of Grace.
+- SPEED +5 (armor): Steel Shield, Venus Shield, Aegis Shield, Black Robe, Ether Shield.
+- MAGIC +5 (weapons): Cat Claw, Charm Claw, Dragon Claw.
+- MAGIC +5 (accessories): Charm, Magic Ring, Cupid Locket.
+
+LLM HINTS (schema-like)
+- Vars:
+  Level:int, Life:int, Attack:float, Defense:int, Speed:int, Magic:int, Accuracy:float, Evade:int,
+  SpellPower:int, weakness:float, split:int, WeaponAttack:int.
+- Derived:
+  AttackDisplay: floor(((Level*2.5)+5) + (Speed - ((Level*2)+6))/2 + WeaponAttack)
+  PhysDamage: max(0, round(((Attack*4) - Defense) * weakness / split))
+  BlackDamage: max(0, round(((SpellPower*4) + (Magic*3) - Defense) * weakness / split))
+  WizardDamage: max(0, round(((SpellPower*6) + (Magic*9) - (Defense*2)) * weakness / split))
+  ExpToNext: 13*(Level^3) + 61*(Level^2)
+
+EXAMPLES (illustrative)
+1) Physical, single-target, neutral element:
+   Attack=120, Defense=60, weakness=1.0, split=1
+   Damage ? (120*4 - 60) * 1 / 1 = 420
+
+2) Black spell, weak vs element, 2 targets:
+   SpellPower=135, Magic=60, Defense=50, weakness=2.0, split=2
+   Base = (135*4) + (60*3) - 50 = 540 + 180 - 50 = 670
+   Damage ? 670 * 2 / 2 = 670 per target
+
+3) Wizard spell, resistant target, single-target:
+   SpellPower=200, Magic=70, Defense=80, weakness=0.5, split=1
+   Base = (200*6) + (70*9) - (80*2) = 1200 + 630 - 160 = 1670
+   Damage ? 1670 * 0.5 = 835
+
+NOTES / CAVEATS
+- Rounding, minimum damage floors, and region/version differences can affect exact results.
+- weakness multipliers and split factors are data-driven per action/target; 2.0/1.0/0.5 are common examples, not exhaustive.
+- Equipment examples are illustrative, not a full list.
+
+ATTRIBUTION
+- Based on in-project local copy of Final Fantasy Wiki: Final_Fantasy_Mystic_Quest_stats. CC-BY-SA applies to the source; this file is an original summary and explicit formulas for interoperability.
