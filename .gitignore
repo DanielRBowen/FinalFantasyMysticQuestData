@@ -1,0 +1,98 @@
+# Ignore Visual Studio temporary files, build results, and user-specific files
+
+# Visual Studio cache
+.vs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+
+# Common build configurations
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+[Rr]eleases?*/
+[Rr]eleases? [Bb]uild*/
+[Xx]64/
+[Xx]86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Visual Studio Code coverage
+*.coverage
+*.coveragexml
+
+# Visual Studio database/caches (C++)
+ipch/
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+
+# MSBuild binary and object files
+*.obj
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.tlog
+*.lastcodeanalysissucceeded
+*.sbr
+*.scc
+
+# Test, publish, and package artifacts
+*.trx
+*.log
+*.bak
+*.svclog
+*.Publish.xml
+[Pp]ublish*/
+
+# Other IDEs (optional)
+_ReSharper*/
+*.sln.iml
+.idea/
+*.DotSettings.user
+
+# OS files
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Rider / JetBrains
+*.ipr
+*.iws
+*.iml
+
+# Xamarin / MAUI
+*.userprefs
+
+# Backup and temp
+*.tmp
+*.temp
+~$*
+*.bak
+*.orig
