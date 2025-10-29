@@ -1003,43 +1003,23 @@ From Final_Fantasy_Mystic_Quest_weapons.csv.
 
 
 | Category | Name | BasePower | AttackPower | Obtained | Notes |
-
-|----------|------|-----------|-------------|----------|-------|
-
-| Swords | Steel Sword | 5 | 12.5~117.5 | Initial: Benjamin | |
-
+| --- | --- | --- | --- | --- | --- |
+| Swords | Steel Sword | 5 | 12.5~117.5 | Initial: Benjamin |  |
 | Swords | Knight Sword | 45 | 55~160 | Find: Ice Pyramid | Speed +5 |
-
 | Swords | Excalibur | 125 | 135~240 | Find: Pazuzu's Tower | Speed +5 |
-
 | Axes | Axe | 9 | 16.5~121.5 (Kaeli 20) | Gift: Kaeli (after defeating Minotaur in Level Forest) | Axe-elemental |
-
 | Axes | Battle Axe | 62.5 | 70~175 | Buy: Fireburg - 500 GP | Axe-elemental |
-
 | Axes | Giant's Axe | 105 | 112.5~217.5 (Kaeli 194) | Find: Alive Forest | Axe-elemental |
-
 | Claws | Cat Claw | 2.5 | 10~115 (Phoebe 44) | Gift: Phoebe (Wintry Cave) | Magic +5. Can inflict Poison; Paralyze |
-
 | Claws | Charm Claw | 37.5 | 45~150 | Find: Mine | Magic +5. Can inflict Poison; Paralyze; Sleep; Confuse; Blind |
-
 | Claws | Dragon Claw | 80 | 87.5~192.5 | Gift: Tristam (Spencer's Place) | Magic +5. Can inflict Poison; Paralyze; Sleep; Confuse; Blind; Petrify; Silence |
-
 | Bombs | Bomb | 63 | - | Buy: Tristam (Bone Dungeon) | Bomb-elemental |
-
 | Bombs | Jumbo Bomb | 112.5 | - | Gift: Phoebe (Falls Basin) | Bomb-elemental |
-
 | Bombs | Mega Grenade | 162 | - | Gift: Arion's friend (Fireburg) | Bomb-elemental |
-
 | Other | Morning Star | 100 | 107.5~212.5 (175 1st time; 187 2nd time) | Initial: Reuben | Axe-elemental |
-
 | Other | Ninja Star | 20 | 27~152 (48 1st time; 93 2nd time) | Initial: Tristam | Shoot-elemental. Speed +5. Can inflict Poison; Paralyze |
-
 | Other | Bow of Grace (Arrow) | 40 | 47~172 (87 1st time; 115 2nd time) | Initial: Phoebe (after giving Benjamin Cat Claw) | Shoot-elemental. Speed +5. Can inflict Blind |
-
 | Other | Bare Hands | Current Power/2 | Varies | Used when a character runs out of Ammo for their weapon | Only available to Benjamin; Tristam; Phoebe |
-
-
-
 ## Armor and Accessories
 
 From Final_Fantasy_Mystic_Quest_armor.csv.
@@ -1047,45 +1027,24 @@ From Final_Fantasy_Mystic_Quest_armor.csv.
 
 
 | Category | Name | Defense | Evade | Obtained | Notes |
-
-|----------|------|---------|-------|----------|-------|
-
+| --- | --- | --- | --- | --- | --- |
 | Helmet | Steel Helm | 4 | 5 | Buy: Aquaria for 200 GP | Attack +5 |
-
 | Helmet | Moon Helm | 9 | 9 | Found: Lava Dome | Attack +5. Resist Fire |
-
 | Helmet | Apollo Helm | 15 | 15 | Found: Mount Gale | Attack +5. Resist Fire |
-
-| Body Armor | Steel Armor | 6 | 4 | Initial: Benjamin | |
-
+| Body Armor | Steel Armor | 6 | 4 | Initial: Benjamin |  |
 | Body Armor | Noble Armor | 12 | 10 | Found: Ice Pyramid | Resist Water and Poison |
-
 | Body Armor | Gaia's Armor | 15 | 11 | Found: Mac's Ship | Resist Water, Wind, Thunder, Poison, Sleep |
-
 | Shield | Steel Shield | 5 | 6 | Found: Bone Dungeon | Speed +5 |
-
 | Shield | Venus Shield | 10 | 12 | Found: Focus Tower | Speed +5. Resist Paralyze |
-
 | Shield | Aegis Shield | 14 | 14 | Found: Doom Castle | Speed +5. Resist Paralyze and Petrify |
-
 | Accessory | Charm | 1 | 1 | Reward: Battlefield north of Level Forest | Magic +5 |
-
 | Accessory | Magic Ring | 3 | 3 | Reward: Battlefield west of Aquaria | Magic +5. Resist Silence |
-
 | Accessory | Cupid Locket | 6 | 6 | Buy: Windia for 300 GP | Magic +5. Resist Silence, Blind, Confusion |
-
 | NPC Armor | Black Robe | 13 | 15 | Initial: Tristam | Speed +5. Resist Fatal |
-
 | NPC Armor | Flame Armor | 14 | 14 | Initial: Reuben | Resist Fire |
-
 | NPC Armor | Mystic Robe | 13 | 12 | Initial: Phoebe | Resist Water, Wind, Thunder |
-
 | NPC Armor | Relica Armor | 15 | 15 | Initial: Kaeli | Resist Water and Petrify |
-
 | NPC Armor | Ether Shield | 12 | 12 | Initial: Phoebe (upon rejoining) | Speed +5. Resist Paralyze, Sleep, Drain |
-
-
-
 ## Spells
 
 From Final_Fantasy_Mystic_Quest_spells.csv.
@@ -1093,35 +1052,19 @@ From Final_Fantasy_Mystic_Quest_spells.csv.
 
 
 | School | Spell | SpellPower | Element | Found | Field Effect | Battle Effect |
-
-|--------|-------|------------|---------|-------|--------------|---------------|
-
+| --- | --- | --- | --- | --- | --- | --- |
 | White | Exit | - | - | Battlefield north of Libra Temple | Warp to world map | Removes one enemy; no EXP/GP; no effect on bosses |
-
 | White | Cure | 50 | Restorative/Undead | Foresta | Restore HP | Damages undead; reflectable (no party effect) |
-
 | White | Heal | - | - | Falls Basin | Remove status ailments | Inflicts one status on enemy (Poison/Confuse/Sleep/Paralyze/Petrify) |
-
 | White | Life | - | - | Lava Dome | Revive to full HP; heals HP/status | Fatal vs enemies (bug); JP/EU: Fatal vs undead only |
-
 | Black | Quake | 25*3 | Earth | Bone Dungeon | - | All enemies; reflectable |
-
 | Black | Blizzard | 135 | Water | Focus Tower | - | Single or all; reflectable |
-
 | Black | Fire | 85 | Fire | Focus Tower | - | Single or all; reflectable |
-
 | Black | Aero | 235 | Wind | Focus Tower | - | Single or all; reflectable |
-
 | Wizard | Thunder | 180 | Lightning | Battlefield far west of Fireburg | - | Single or all; reflectable |
-
 | Wizard | White | 140*3 | Non-elemental | Volcano | - | Reflectable |
-
 | Wizard | Meteor | 170*3 | Earth | Giant Tree | - | All enemies; reflectable |
-
 | Wizard | Flare | 200*3 | Fire | Pazuzu's Tower | - | Reflectable |
-
-
-
 ## Items (Consumables, Key Items, Crests, Coins)
 
 From Final_Fantasy_Mystic_Quest_items.csv.
@@ -1283,217 +1226,106 @@ From Final_Fantasy_Mystic_Quest_enemy_abilities.csv. Complete table.
 
 
 | Ability | AttackPower | Description | Enemies |
-
-|---------|-------------|-------------|---------|
-
+| --- | --- | --- | --- |
 | 6 Psudopods | 50 | Damage attack, hits both players up to 6 times. | Squidite |
-
 | Attach | 10 | Damage attack. | Ghost; Specter |
-
 | Axe | 5 | Damage attack. | Minotaur; Minotaur Zombie |
-
 | Axe Bomber | 10 | Damage. | Ice Golem; Stone Golem |
-
 | Bad Breath | - | Inflicts Paralyze. | Plant Man; Stheno |
-
 | Bark | 70 | Non-elemental attack. | Were Wolf |
-
 | Beak | 5 | Damage attack. | Garuda; Roc; Sparna |
-
 | Beam | 22 | Damage attack. | Iflyte; Jinn |
-
 | Bearhug | 2 | Damage attack. | Iflyte |
-
 | Bite | 10 | Damage attack. | Gorgon; Manticor; Twinhead Wyvern |
-
 | Blackness | 75 | Non-elemental attack that can inflict Blind. | Squidite |
-
 | Blind Flash | - | Inflicts Blind. | Beholder; Gather |
-
 | Blinder | 75 | Non-elemental attack that can inflict Blind. | Adamant Turtle; Edgehog; Garuda; Manticor; Roc |
-
 | Blizzard | 10 | Water attack. | Gargoyle; Mage; Sorcerer; Vampire |
-
 | Blow Dart | 15 | Shoot attack. | Ninja; Shadow |
-
 | Body Odor | - | Inflicts Paralyze. | Mad Toad |
-
 | Body Slam | 10 | Damage attack. | Adamant Turtle; Land Turtle |
-
 | Bone Missile | 6 | Non-elemental attack. | Flamerus Rex; Skullrus Rex |
-
 | Bow & Arrow | 15 | Shoot attack. | Centaur; Nightmare |
-
 | Branch | 5 | Damage attack. | Mad Plant; Plant Man |
-
 | Chew Off | 1 | Damage attack. | Flamerus Rex |
-
 | Choke Up | 50 | Damage attack. | Phanquid; Squidite |
-
 | Claw | 5 | Damage attack. | Basilisk; Flazzard; Salamand; Sphinx |
-
 | Coldness | 65 | Water attack. | Ghost; Specter; Stoney Roost |
-
 | Confu-touch | - | Counters physical attacks by inflicting Confusion. | Specter |
-
 | Corrode Gas | 50 | Inflicts Fatal. | Stone Golem; Live Oak |
-
 | Counterattack | Varies | Counters physical attacks with an attack of their own. | Desert Hag; Water Hag |
-
 | Cure | 0/25 | Weak/strong versions. Restores HP. | Mage; Sorcerer; Thanatos; Water Hag |
-
 | Cure Arrow | 70 | Shoot attack to a single target and restores HP to the user. | Dark King |
-
 | Dark Cane | 80 | Damage attack with a 100% critical hit rate. | Dark King |
-
 | Dark Sabre | 115 | Damage attack. | Dark King |
-
 | Dash | 20 | Damage attack. | Gorgon |
-
 | Didn't do anything | - | Enemy skips their turn. | Ghost; Zombie; Shadow |
-
 | Dissolve | 100 | Drain attack. | Jelly; Ooze |
-
 | Dive | 10 | Damage attack. | Hot Wings; Stoney Roost |
-
-Continuation of the Enemy Abilities table from Final_Fantasy_Mystic_Quest_enemy_abilities.csv, starting from where the previous file was cut off ("Doom Dance").
-
-
-
-| Ability | AttackPower | Description | Enemies |
-
-|---------|-------------|-------------|---------|
-
 | Doom Dance | 200 | Non-elemental attack that can inflict Fatal. | Zuh |
-
 | Doom Powder | - | Inflicts Fatal. | Skuldier |
-
 | Dragon Cut | 12 | Damage attack. | Iflyte |
-
 | Electrapulse | 75 | Thunder attack. | Phanquid |
-
 | Fang | 10 | Damage attack. | Basilisk; Leech |
-
 | Fin | 10 | Damage attack. | Desert Hag; Water Hag |
-
 | Fire | 10 | Fire attack. | Salamand; Sorcerer |
-
 | Fire Breath | 92/120 | Fire attack. Weak/strong versions. | Dualhead Hydra; Twinhead Wyvern |
-
 | Fire Pillar | 10 | Fire attack. | Jinn |
-
 | Flame | 15 | Fire attack. | Flazzard |
-
 | Flame Pillar | 15 | Fire attack. | Iflyte |
-
 | Full Nelson | 5 | Damage attack. | Freezer Crab; Mad Plant; Plant Man |
-
 | Golden Web | - | Inflicts Paralyze. | Dark King |
-
 | Horn | 5 | Damage attack. | Behemoth |
-
 | Hurricane | 150 | Wind attack. | Zuh |
-
 | Hydro Acid | 5 | Damage attack. | Slime |
-
 | Hypno-Sleep | - | Inflicts Sleep. | Dualhead Hydra |
-
 | Ice Sword | 115 | Water attack. | Dark King |
-
 | Iron Nail | 115 | Damage attack. | Dark King |
-
 | Kick | 5 | Damage attack. | Brownie |
-
 | Lazer | 150 | Non-elemental attack. | Dark King |
-
 | Mega Flare | 200 | Fire attack. | Dark King |
-
 | Mega White | 200 | Non-elemental attack. | Dark King |
-
 | Mirror Sword | 115 | Damage attack. | Dark King |
-
 | Para-stare | - | Inflicts Paralyze. | Dark King |
-
 | Piledriver | 150 | Damage attack. | Zuh |
-
 | Poison Flour | - | Inflicts Poison. | Flamerus Rex |
-
 | Punch | 5 | Damage attack. | Brownie |
-
 | Quake Axe | 115 | Earth attack. | Dark King |
-
 | Quicksand | 10 | Earth attack. | Sand Worm |
-
 | Rapier | 10 | Damage attack. | Scorpion |
-
 | Riddle | 10 | Damage attack. | Sphinx |
-
 | Rip Earth | 10 | Earth attack. | Flamerus Rex |
-
 | Roundhouse | 5 | Damage attack. | Minotaur |
-
 | Scissors | 10 | Damage attack. | Scorpion |
-
 | Scrunch | 50 | Damage attack. | Dualhead Hydra; Sand Worm; Twinhead Wyvern |
-
 | Screech Voice | - | Inflicts Silence. | Stheno |
-
 | Silver Web | - | Inflicts Paralyze. | Dark King |
-
 | Sky Attack | 150 | Damage attack. | Pazuzu; Zuh |
-
 | Sleep Lure | - | Inflicts Sleep. | Lamia |
-
 | Sleep Powder | - | Inflicts Sleep. | Flamerus Rex; Skuldier |
-
 | Sonic Boom | 75 | Non-elemental attack. | Vampire |
-
 | Spark | 100 | Thunder attack. | Jelly; Ooze |
-
 | Spider Kids | - | Non-elemental attack. | Dark King |
-
 | Spooky Laugh | - | Inflicts Confusion. | Skuldier |
-
 | Stab | 5 | Damage attack. | Slime |
-
 | Stare | - | Inflicts Paralyze. | Minotaur Zombie; Red Cap |
-
 | Stinger | 10 | Damage attack. | Mad Toad |
-
 | Stone Beak | 10 | Damage attack that can inflict Petrify. | Pazuzu |
-
 | Stone Gas | - | Inflicts Petrify. | Dualhead Hydra |
-
 | Stone Gaze | - | Inflicts Petrify. | Stheno |
-
 | Stomp Stomp | 10 | Damage attack. | Ice Golem |
-
 | Sucker Stick | 50 | Damage attack. | Phanquid; Squidite |
-
 | Sword | 10 | Damage attack. | Red Bone; Skuldier |
-
 | Thunder | 10 | Thunder attack. | Dualhead Hydra; Twinhead Wyvern |
-
 | Thunder Beam | 100 | Thunder attack. | Ooze |
-
 | Tornado | 150 | Wind attack. | Twinhead Wyvern |
-
 | Twin Fang | 5 | Damage attack. | Flamerus Rex |
-
 | Typhoon | 150 | Wind attack. | Vampire |
-
 | Uppercut | 75 | Damage attack. | Vampire |
-
 | Watergun | 10 | Water attack. | Desert Hag; Water Hag |
-
 | Whirlwater | 100 | Water attack. | Water Hag |
-
 | Whip Tongue | 5 | Damage attack. | Giant Toad; Poison Toad |
-
 | Windstorm | 150 | Wind attack. | Pazuzu |
-
-
-
 ## Battlefields
 
 From Final_Fantasy_Mystic_Quest_battlefields.csv. Complete table.
@@ -1501,45 +1333,24 @@ From Final_Fantasy_Mystic_Quest_battlefields.csv. Complete table.
 
 
 | Location | Enemies | Reward |
-
-|----------|---------|--------|
-
+| --- | --- | --- |
 | North of Level Forest | Poison Toad, Mad Plant | 54 Exp |
-
 | West of Sand Temple | Poison Toad, Mad Plant, Basilisk | Charm |
-
 | East of Sand Temple | Sand Worm, Basilisk, Minotaur Zombie | 150 GP |
-
 | South of Libra Temple | Mint Mint | 99 Exp |
-
 | East of Libra Temple | Giant Toad, Mint Mint | 300 GP |
-
 | South of Aquaria | Giant Toad, Edgehog, Mint Mint | Magic Ring |
-
 | East of Aquaria | Giant Toad, Edgehog, Mint Mint | 99 Exp |
-
 | West of Wintry Cave | Desert Hag | 600 GP |
-
 | South of Ice Pyramid | Desert Hag, Lamia, Mage | 540 Exp |
-
 | North of Libra Temple | Phanquid, Sphinx | Exit spell |
-
 | North of Wintry Temple | Freezer Crab, Gather | 744 Exp |
-
 | North of Focus Tower | Jelly | 900 GP |
-
 | Further north of Focus Tower | Jelly, Sting Rat | Gemini Crest |
-
 | East of Fireburg | Plant Man | 816 Exp |
-
 | West of Fireburg | Flazzard, Plant Man, Sting Rat | 1200 GP |
-
 | South of the Mine | Flazzard, Red Cap | Thunder spell |
-
 | West of the Volcano | Ghost, Red Bone, Zombie | 1200 Exp |
-
 | East of the Volcano | Iflyte, Stheno | 1068 Exp |
-
 | Southwest of Windia | Ooze, Skuldier, Water Hag | 2808 Exp |
-
 | South of Windia | Vampire, Water Hag | 2700 Exp |
