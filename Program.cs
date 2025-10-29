@@ -1,129 +1,219 @@
-﻿using System;
+using System;
 using System.IO;
-using System.Text.RegularExpressions;
 using System.Linq;
 using System.Collections.Generic;
+using System.Text.Json;
 
-// File paths (relative to repo root)
-string mergedFilePath = "FFMQ_Complete_LLM_Guide_Merged.markdown";
-string supplementalFilePath = "FFMQ_Supplemental_Boss_HP.markdown"; // corrected extension
-string outputFilePath = "FFMQ_Complete_LLM_Guide_Final.markdown";
+// Clean Monsters.csv: remove PlayerAttack/PlayerDamageDone/EnemyDefense, rename WikiAttack->Strength, WikiDefense->Defense,
+// replace ImageUrl with WikiUrl populated from bestiary_wiki_links.json, and simplify AbilitiesJson to a list of names
+CleanMonstersCsv();
 
-if (!File.Exists(mergedFilePath))
+static void CleanMonstersCsv()
 {
-    Console.WriteLine($"Error: Merged file not found: {mergedFilePath}");
-    return;
-}
-if (!File.Exists(supplementalFilePath))
-{
-    Console.WriteLine($"Error: Supplemental file not found: {supplementalFilePath}");
-    return;
-}
+ string monstersCsv = "Monsters.csv";
+ string wikiMapJson = "bestiary_wiki_links.json";
+ if (!File.Exists(monstersCsv)) { Console.WriteLine($"Skip CSV: missing {monstersCsv}"); return; }
 
-// Read the merged and supplemental files
-string mergedContent = File.ReadAllText(mergedFilePath);
-string supplementalContent = File.ReadAllText(supplementalFilePath);
+ // Load wiki urls
+ var wikiMap = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+ if (File.Exists(wikiMapJson))
+ {
+ using var js = File.OpenRead(wikiMapJson);
+ var entries = JsonSerializer.Deserialize<List<WikiLink>>(js, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? new();
+ foreach (var e in entries)
+ {
+ if (!string.IsNullOrWhiteSpace(e?.Name) && !string.IsNullOrWhiteSpace(e?.WikiUrl))
+ wikiMap[e.Name.Trim()] = e.WikiUrl.Trim();
+ }
+ }
+ else
+ {
+ Console.WriteLine($"Warning: {wikiMapJson} not found. WikiUrl column will be empty.");
+ }
 
-// Extract HP data from supplemental file (static for now based on provided markdown)
-var hpData = new Dictionary<string, (string HP, string Source)>
-{
-    { "Squidite", ("1500", "https://finalfantasy.fandom.com/wiki/Squidite") },
-    { "Pazuzu", ("15000", "https://finalfantasy.fandom.com/wiki/Pazuzu_(Mystic_Quest)") }
-};
+ var allLines = File.ReadAllLines(monstersCsv);
+ if (allLines.Length ==0) { Console.WriteLine("Monsters.csv is empty, skipping."); return; }
 
-// Split the content to manipulate the document line-by-line
-string[] lines = mergedContent.Split('\n');
+ var header = CsvUtil.ParseCsvRow(allLines[0]);
+ int idxPlayerAttack = CsvUtil.IndexOf(header, "PlayerAttack");
+ int idxPlayerDamageDone = CsvUtil.IndexOf(header, "PlayerDamageDone");
+ int idxEnemyDefense = CsvUtil.IndexOf(header, "EnemyDefense");
+ int idxImageUrl = CsvUtil.IndexOf(header, "ImageUrl");
+ int idxMonsterName = CsvUtil.IndexOf(header, "MonsterName");
+ int idxWikiAttack = CsvUtil.IndexOf(header, "WikiAttack");
+ int idxWikiDefense = CsvUtil.IndexOf(header, "WikiDefense");
+ int idxAbilitiesJson = CsvUtil.IndexOf(header, "AbilitiesJson");
 
-// Update Bestiary table
-bool inBestiaryTable = false;
-for (int i =0; i < lines.Length; i++)
-{
-    // Detect table header start
-    if (lines[i].StartsWith("| Order | Name |", StringComparison.Ordinal))
-    {
-        inBestiaryTable = true;
-        continue;
-    }
+ var indicesToRemove = new HashSet<int>();
+ if (idxPlayerAttack >=0) indicesToRemove.Add(idxPlayerAttack);
+ if (idxPlayerDamageDone >=0) indicesToRemove.Add(idxPlayerDamageDone);
+ if (idxEnemyDefense >=0) indicesToRemove.Add(idxEnemyDefense);
 
-    if (inBestiaryTable)
-    {
-        // An empty line or a heading ends the table
-        if (string.IsNullOrWhiteSpace(lines[i]) || lines[i].StartsWith("## "))
-        {
-            inBestiaryTable = false;
-            continue;
-        }
+ // Build new header with renames and ImageUrl -> WikiUrl
+ var newHeader = new List<string>();
+ for (int i =0; i < header.Count; i++)
+ {
+ if (indicesToRemove.Contains(i)) continue;
+ string name = header[i];
+ if (i == idxWikiAttack) name = "Strength";
+ else if (i == idxWikiDefense) name = "Defense";
+ else if (i == idxImageUrl) name = "WikiUrl";
+ newHeader.Add(name);
+ }
 
-        if (lines[i].StartsWith("|"))
-        {
-            var columns = lines[i]
-                .Split('|')
-                .Select(c => c.Trim())
-                .ToArray();
+ var output = new List<string> { CsvUtil.ToCsvRow(newHeader) };
+ for (int li =1; li < allLines.Length; li++)
+ {
+ if (string.IsNullOrWhiteSpace(allLines[li])) { output.Add(string.Empty); continue; }
+ var row = CsvUtil.ParseCsvRow(allLines[li]);
+ while (row.Count < header.Count) row.Add(string.Empty);
 
-            if (columns.Length >=6)
-            {
-                // columns: ["", Order, Name, Type, Locations, HP, ... , ""]
-                string name = columns[2];
-                if (!string.IsNullOrEmpty(name) && hpData.TryGetValue(name, out var hp))
-                {
-                    // Update HP column (index5)
-                    columns[5] = hp.HP;
+ var newRow = new List<string>(newHeader.Count);
+ for (int i =0; i < header.Count; i++)
+ {
+ if (indicesToRemove.Contains(i)) continue;
+ if (i == idxImageUrl)
+ {
+ var name = idxMonsterName >=0 && idxMonsterName < row.Count ? row[idxMonsterName] : string.Empty;
+ string wiki = string.Empty;
+ if (!string.IsNullOrWhiteSpace(name))
+ {
+ if (!wikiMap.TryGetValue(name, out wiki))
+ {
+ var norm = name.Trim();
+ if (!wikiMap.TryGetValue(norm, out wiki))
+ {
+ var norm2 = norm.Replace("'", string.Empty);
+ wikiMap.TryGetValue(norm2, out wiki);
+ }
+ }
+ }
+ newRow.Add(wiki ?? string.Empty);
+ }
+ else if (i == idxAbilitiesJson)
+ {
+ var abilitiesCell = i < row.Count ? row[i] : string.Empty;
+ var simplified = CsvUtil.SimplifyAbilitiesJson(abilitiesCell);
+ newRow.Add(simplified);
+ }
+ else
+ {
+ newRow.Add(i < row.Count ? row[i] : string.Empty);
+ }
+ }
+ output.Add(CsvUtil.ToCsvRow(newRow));
+ }
 
-                    // Rebuild the row excluding the leading and trailing empty cells
-                    string rebuilt = "| " + string.Join(" | ", columns.Skip(1).Take(columns.Length -2)) + " |";
-                    lines[i] = rebuilt;
-                }
-            }
-        }
-    }
-}
-
-// Update Story Chronology section entries
-for (int i =0; i < lines.Length; i++)
-{
-    if (lines[i].StartsWith("**LOCATION: Wintry Cave**", StringComparison.Ordinal))
-    {
-        // Boss line is typically5 lines after the LOCATION line
-        int bossLine = i +5;
-        if (bossLine < lines.Length)
-        {
-            // Replace any existing "HP: ..." token up to the next comma or closing paren
-            lines[bossLine] = Regex.Replace(
-                lines[bossLine],
-                @"Squidite\s*\(HP:[^,\)]*",
-                $"Squidite (HP: {hpData["Squidite"].HP}");
-        }
-    }
-    else if (lines[i].StartsWith("**LOCATION: Pazuzu's Tower**", StringComparison.Ordinal))
-    {
-        int bossLine = i +5;
-        if (bossLine < lines.Length)
-        {
-            lines[bossLine] = Regex.Replace(
-                lines[bossLine],
-                @"Pazuzu\s*\(HP:[^,\)]*",
-                $"Pazuzu (HP: {hpData["Pazuzu"].HP}");
-        }
-    }
-}
-
-// Add attribution note to Additional Notes section
-string notesSectionHeader = "## Additional Notes";
-int notesHeaderIndex = Array.FindIndex(lines, l => l.StartsWith(notesSectionHeader, StringComparison.Ordinal));
-string hpNote = "- **Boss HP Estimates**: HP values for Squidite (1500) and Pazuzu (15000) were sourced from https://finalfantasy.fandom.com (estimates), not from Bestiary_Chronological_v2.csv.";
-if (notesHeaderIndex != -1)
-{
-    var before = lines.Take(notesHeaderIndex +1);
-    var after = lines.Skip(notesHeaderIndex +1);
-
-    // Only add if not already present
-    if (!after.Any(l => l.Contains("Boss HP Estimates")))
-    {
-        lines = before.Concat(new[] { hpNote }).Concat(after).ToArray();
-    }
+ File.WriteAllLines(monstersCsv, output);
+ Console.WriteLine("Monsters.csv cleaned and updated with WikiUrl and simplified AbilitiesJson.");
 }
 
-// Write the updated content to a new file
-File.WriteAllLines(outputFilePath, lines);
-Console.WriteLine($"Merged file written to {outputFilePath}");
+public static class CsvUtil
+{
+ public static int IndexOf(IReadOnlyList<string> list, string value)
+ {
+ for (int i =0; i < list.Count; i++)
+ {
+ if (string.Equals(list[i], value, StringComparison.Ordinal)) return i;
+ }
+ return -1;
+ }
+
+ public static List<string> ParseCsvRow(string line)
+ {
+ var result = new List<string>();
+ if (line == null) return result;
+ int i =0;
+ while (i < line.Length)
+ {
+ if (line[i] == ',') { result.Add(string.Empty); i++; continue; }
+ string field;
+ if (line[i] == '"')
+ {
+ i++; // skip opening quote
+ var sb = new System.Text.StringBuilder();
+ bool done = false;
+ while (!done && i < line.Length)
+ {
+ if (line[i] == '"')
+ {
+ if (i +1 < line.Length && line[i +1] == '"') { sb.Append('"'); i +=2; }
+ else { i++; done = true; }
+ }
+ else { sb.Append(line[i]); i++; }
+ }
+ if (i < line.Length && line[i] == ',') i++;
+ field = sb.ToString();
+ }
+ else
+ {
+ int start = i;
+ while (i < line.Length && line[i] != ',') i++;
+ field = line.Substring(start, i - start);
+ if (i < line.Length && line[i] == ',') i++;
+ }
+ result.Add(field);
+ }
+ if (line.EndsWith(",")) result.Add(string.Empty);
+ return result;
+ }
+
+ public static string ToCsvRow(IReadOnlyList<string> fields)
+ {
+ var parts = new List<string>(fields.Count);
+ foreach (var f in fields)
+ {
+ string v = f ?? string.Empty;
+ bool needsQuote = v.Contains(',') || v.Contains('"') || v.Contains('\n') || v.Contains('\r');
+ if (needsQuote) v = '"' + v.Replace("\"", "\"\"") + '"';
+ parts.Add(v);
+ }
+ return string.Join(',', parts);
+ }
+
+ public static string SimplifyAbilitiesJson(string json)
+ {
+ if (string.IsNullOrWhiteSpace(json)) return json ?? string.Empty;
+ try
+ {
+ using var doc = JsonDocument.Parse(json);
+ if (doc.RootElement.ValueKind != JsonValueKind.Array)
+ return json; // leave as-is if not array
+ var names = new List<string>();
+ foreach (var el in doc.RootElement.EnumerateArray())
+ {
+ if (el.ValueKind == JsonValueKind.Object)
+ {
+ string? name = null;
+ foreach (var prop in el.EnumerateObject())
+ {
+ if (string.Equals(prop.Name, "AbilityName", StringComparison.OrdinalIgnoreCase))
+ {
+ if (prop.Value.ValueKind == JsonValueKind.String)
+ name = prop.Value.GetString();
+ break;
+ }
+ }
+ if (!string.IsNullOrWhiteSpace(name)) names.Add(name!);
+ }
+ else if (el.ValueKind == JsonValueKind.String)
+ {
+ var s = el.GetString();
+ if (!string.IsNullOrWhiteSpace(s)) names.Add(s!);
+ }
+ }
+ return JsonSerializer.Serialize(names);
+ }
+ catch
+ {
+ // If parsing fails, leave original content
+ return json;
+ }
+ }
+}
+
+public class WikiLink
+{
+ public string Name { get; set; } = string.Empty;
+ public string WikiUrl { get; set; } = string.Empty;
+}
