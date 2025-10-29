@@ -1186,7 +1186,7 @@ From Final_Fantasy_Mystic_Quest_items.csv.
 
 ## Bestiary (Enemies and Bosses, Chronological)
 
-From Bestiary_Chronological_v2.csv. Complete table with all entries.
+From Monsters.csv. Complete table with all entries.
 
 
 
