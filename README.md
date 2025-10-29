@@ -18,7 +18,7 @@ Structured, machine-friendly data for Final Fantasy Mystic Quest. Use this repos
  - [Battlefields](./FFMQ_Complete_LLM_Guide.markdown#battlefields)
 
 ## What’s in this repo
-- `FFMQ_Complete_LLM_Guide_Final.markdown` – unified, LLM-friendly guide compiled from all sources (primary artifact).
+- `FFMQ_Complete_LLM_Guide.markdown` – unified, LLM-friendly guide compiled from all sources (primary artifact).
 - Source CSV/TXT data files used to build the guide (armor, items, spells, locations, bestiary, etc.).
 
 ## Notes and attribution
