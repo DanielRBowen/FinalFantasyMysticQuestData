@@ -100,10 +100,11 @@ static void UpdateBestiaryFromMonsters()
  string name = Get(row, idxName);
  string type = bossNames.Contains(name) ? "Boss" : "Enemy";
  string location = Get(row, idxLocation);
+ string level = "1"; // placeholder level per request
  string hp = Get(row, idxHp);
  string exp = Get(row, idxExp);
  string gp = Get(row, idxGp);
- string atk = Get(row, idxAtk);
+ string str = Get(row, idxAtk);
  string def = Get(row, idxDef);
  string spd = Get(row, idxSpd);
  string mag = Get(row, idxMag);
@@ -111,7 +112,6 @@ static void UpdateBestiaryFromMonsters()
  string elem = FormatDict(Get(row, idxElem));
  string status = FormatDict(Get(row, idxStatus));
  string drops = FormatDrops(Get(row, idxDrops));
- string imageUrl = string.Empty; // Not present in Monsters.csv
  string wiki = Get(row, idxWiki);
 
  // Targeted repair for Dark King (4th Form) if input row was truncated
@@ -120,7 +120,7 @@ static void UpdateBestiaryFromMonsters()
  if (string.IsNullOrWhiteSpace(hp)) hp = "40";
  if (string.IsNullOrWhiteSpace(exp)) exp = "0";
  if (string.IsNullOrWhiteSpace(gp)) gp = "0";
- if (string.IsNullOrWhiteSpace(atk)) atk = "50";
+ if (string.IsNullOrWhiteSpace(str)) str = "50";
  if (string.IsNullOrWhiteSpace(def)) def = "120";
  if (string.IsNullOrWhiteSpace(spd)) spd = "86";
  if (string.IsNullOrWhiteSpace(mag)) mag = "75";
@@ -134,27 +134,32 @@ static void UpdateBestiaryFromMonsters()
  status = "Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune";
  }
 
- // Markdown table row
- string mdRow = $"| {order} | {EscapePipes(name)} | {type} | {EscapePipes(location)} | {hp} | {exp} | {gp} | {atk} | {def} | {spd} | {mag} | {EscapePipes(abilities)} | {EscapePipes(elem)} | {EscapePipes(status)} | {EscapePipes(drops)} | {EscapePipes(imageUrl)} | {EscapePipes(wiki)} |";
+ // Markdown table row with new column order (Level inserted, Attack renamed to Strength, ImageUrl removed)
+ string mdRow = $"| {order} | {EscapePipes(name)} | {type} | {EscapePipes(location)} | {level} | {hp} | {exp} | {gp} | {str} | {def} | {spd} | {mag} | {EscapePipes(abilities)} | {EscapePipes(elem)} | {EscapePipes(status)} | {EscapePipes(drops)} | {EscapePipes(wiki)} |";
  rows.Add((order, mdRow));
  }
  rows.Sort((a,b) => a.Order.CompareTo(b.Order));
 
- // Rewrite Bestiary table in markdown
+ // Rewrite Bestiary table header and body in markdown
  var guideLines = File.ReadAllLines(guidePath).ToList();
- int tableHeaderIdx = guideLines.FindIndex(l => l.StartsWith("| Order | Name | Type |", StringComparison.Ordinal));
- if (tableHeaderIdx == -1) { Console.WriteLine("Bestiary table header not found, aborting update."); return; }
- int tableSepIdx = tableHeaderIdx +1; // assumes separator line next
- int endIdx = guideLines.FindIndex(tableSepIdx +1, l => l.StartsWith("## Enemy Abilities", StringComparison.Ordinal));
- if (endIdx == -1) endIdx = guideLines.Count; // until end if not found
+ int headerIdx = guideLines.FindIndex(l => l.StartsWith("| Order | Name | Type |", StringComparison.Ordinal));
+ if (headerIdx == -1) { Console.WriteLine("Bestiary table header not found, aborting update."); return; }
+ int sepIdx = headerIdx +1;
+ int endIdx = guideLines.FindIndex(sepIdx +1, l => l.StartsWith("## Enemy Abilities", StringComparison.Ordinal));
+ if (endIdx == -1) endIdx = guideLines.Count;
 
- // Keep header and separator, replace body
+ // New header and separator
+ string newHeader = "| Order | Name | Type | Locations | Level | HP | EXP | GP | Strength | Defense | Speed | Magic | Abilities | Elemental Affinities | Status Affinities | Drops | WikiUrl |";
+ string newSep = "|-------|------|------|-----------|-------|----|-----|----|----------|---------|-------|-------|-----------|---------------------|------------------|-------|--------|";
+
  var newGuide = new List<string>();
- newGuide.AddRange(guideLines.Take(tableSepIdx +1));
+ newGuide.AddRange(guideLines.Take(headerIdx));
+ newGuide.Add(newHeader);
+ newGuide.Add(newSep);
  newGuide.AddRange(rows.Select(r => r.Row));
  newGuide.AddRange(guideLines.Skip(endIdx));
  File.WriteAllLines(guidePath, newGuide);
- Console.WriteLine($"Updated Bestiary table in {guidePath} from Monsters.csv.");
+ Console.WriteLine($"Updated Bestiary table (header and rows) in {guidePath} from Monsters.csv.");
 
  static string Get(List<string> row, int idx) => (idx >=0 && idx < row.Count) ? (row[idx] ?? string.Empty) : string.Empty;
  static int SafeInt(string s) => int.TryParse(s, out var v) ? v : int.MaxValue;
