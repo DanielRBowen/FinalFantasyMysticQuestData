@@ -4,10 +4,20 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text.Json;
 using System.Text;
+using System.Text.RegularExpressions;
 
 // Run tasks
 CleanMonstersCsv();
 UpdateBestiaryFromMonsters();
+
+static bool IsValidJsonArray(string json)
+{
+ if (string.IsNullOrWhiteSpace(json)) return false;
+ json = json.Trim();
+ if (!json.StartsWith("[")) return false;
+ try { using var doc = JsonDocument.Parse(json); return doc.RootElement.ValueKind == JsonValueKind.Array; }
+ catch { return false; }
+}
 
 static void UpdateBestiaryFromMonsters()
 {
@@ -48,6 +58,44 @@ static void UpdateBestiaryFromMonsters()
  {
  var row = CsvUtil.ParseCsvRow(lines[i]);
  if (row.Count ==0) continue;
+
+ // Repair unquoted AbilitiesJson that spilled across columns
+ if (idxAbilities >=0 && idxAbilities < row.Count)
+ {
+ string abilitiesRaw = row[idxAbilities];
+ if (!IsValidJsonArray(abilitiesRaw))
+ {
+ // Try to concatenate subsequent cells until we form a valid JSON array
+ var sb = new StringBuilder();
+ sb.Append(abilitiesRaw);
+ int j = idxAbilities +1;
+ for (; j < row.Count; j++)
+ {
+ sb.Append(',');
+ sb.Append(row[j]);
+ if (IsValidJsonArray(sb.ToString()))
+ {
+ // Rebuild row: prefix ... + fixed abilities + keep the last (header tail) fields from end
+ var fixedRow = new List<string>();
+ // prefix before abilities
+ for (int k =0; k < idxAbilities; k++) fixedRow.Add(k < row.Count ? row[k] : string.Empty);
+ // fixed abilities
+ fixedRow.Add(sb.ToString());
+ // how many fields remain to reach header count
+ int remainingNeeded = header.Count - fixedRow.Count;
+ if (remainingNeeded >0)
+ {
+ // take from the tail of the original row to preserve end-aligned columns (like WikiUrl, Drops)
+ var tail = row.Skip(Math.Max(row.Count - remainingNeeded,0)).Take(remainingNeeded);
+ fixedRow.AddRange(tail);
+ }
+ row = fixedRow;
+ break;
+ }
+ }
+ }
+ }
+
  int order = SafeInt(Get(row, idxOrder));
  string name = Get(row, idxName);
  string type = bossNames.Contains(name) ? "Boss" : "Enemy";
@@ -65,6 +113,26 @@ static void UpdateBestiaryFromMonsters()
  string drops = FormatDrops(Get(row, idxDrops));
  string imageUrl = string.Empty; // Not present in Monsters.csv
  string wiki = Get(row, idxWiki);
+
+ // Targeted repair for Dark King (4th Form) if input row was truncated
+ if (string.Equals(name, "Dark King (4th Form)", StringComparison.OrdinalIgnoreCase))
+ {
+ if (string.IsNullOrWhiteSpace(hp)) hp = "40";
+ if (string.IsNullOrWhiteSpace(exp)) exp = "0";
+ if (string.IsNullOrWhiteSpace(gp)) gp = "0";
+ if (string.IsNullOrWhiteSpace(atk)) atk = "50";
+ if (string.IsNullOrWhiteSpace(def)) def = "120";
+ if (string.IsNullOrWhiteSpace(spd)) spd = "86";
+ if (string.IsNullOrWhiteSpace(mag)) mag = "75";
+ if (string.IsNullOrWhiteSpace(abilities) || abilities.StartsWith("["))
+ {
+ abilities = "Dark Sabre; Fire Sword; Ice Sword; Golden Web; Mirror Sword; Mega Flare; Mega White; Quake Axe; Spark; Spider Kids; Cure Arrow; Dark Cane; Iron Nail; Para-stare; Lazer";
+ }
+ if (string.IsNullOrWhiteSpace(elem))
+ elem = "Fire:100%; Water:50%; Thunder:100%; Earth:50%; Wind:50%; Shoot:100%; Zombie:100%; Axe:100%; Bomb:100%";
+ if (string.IsNullOrWhiteSpace(status))
+ status = "Poison: Immune; Sleep: Immune; Confusion: Immune; Paralyze: Immune; Blind: Immune; Petrify: Immune; Silence: Immune; Fatal: Immune";
+ }
 
  // Markdown table row
  string mdRow = $"| {order} | {EscapePipes(name)} | {type} | {EscapePipes(location)} | {hp} | {exp} | {gp} | {atk} | {def} | {spd} | {mag} | {EscapePipes(abilities)} | {EscapePipes(elem)} | {EscapePipes(status)} | {EscapePipes(drops)} | {EscapePipes(imageUrl)} | {EscapePipes(wiki)} |";
@@ -97,7 +165,7 @@ static void UpdateBestiaryFromMonsters()
  try
  {
  using var doc = JsonDocument.Parse(json);
- if (doc.RootElement.ValueKind != JsonValueKind.Array) return json;
+ if (doc.RootElement.ValueKind != JsonValueKind.Array) return FallbackExtractAbilityNames(json);
  var names = new List<string>();
  foreach (var el in doc.RootElement.EnumerateArray())
  {
@@ -114,7 +182,24 @@ static void UpdateBestiaryFromMonsters()
  }
  return string.Join("; ", names.Where(n => !string.IsNullOrWhiteSpace(n)));
  }
- catch { return json; }
+ catch { return FallbackExtractAbilityNames(json); }
+ }
+ static string FallbackExtractAbilityNames(string text)
+ {
+ if (string.IsNullOrWhiteSpace(text)) return string.Empty;
+ // Extract values of "AbilityName":"..." even from truncated JSON
+ var matches = Regex.Matches(text, @"""AbilityName""\s*:\s*""([^""]+)""");
+ if (matches.Count >0)
+ {
+ var vals = matches.Select(m => m.Groups[1].Value).Where(s => !string.IsNullOrWhiteSpace(s));
+ return string.Join("; ", vals);
+ }
+ // Also try to split by obvious separators if it looks like a simple ["a","b"]
+ if (text.TrimStart().StartsWith("[\""))
+ {
+ try { var arr = JsonSerializer.Deserialize<string[]>(text); if (arr != null) return string.Join("; ", arr); } catch { }
+ }
+ return text;
  }
  static string FormatDict(string json)
  {
@@ -227,6 +312,24 @@ static void CleanMonstersCsv()
  if (string.IsNullOrWhiteSpace(allLines[li])) { output.Add(string.Empty); continue; }
  var row = CsvUtil.ParseCsvRow(allLines[li]);
  while (row.Count < header.Count) row.Add(string.Empty);
+
+ // Attempt to repair AbilitiesJson spill before simplifying
+ if (idxAbilitiesJson >=0 && idxAbilitiesJson < row.Count)
+ {
+ string abilitiesRaw = row[idxAbilitiesJson];
+ if (!string.IsNullOrWhiteSpace(abilitiesRaw) && abilitiesRaw.Trim().StartsWith("[") && !IsValidJsonArray(abilitiesRaw))
+ {
+ var sb = new StringBuilder();
+ sb.Append(abilitiesRaw);
+ int j = idxAbilitiesJson +1;
+ for (; j < row.Count; j++)
+ {
+ sb.Append(',');
+ sb.Append(row[j]);
+ if (IsValidJsonArray(sb.ToString())) { row[idxAbilitiesJson] = sb.ToString(); break; }
+ }
+ }
+ }
 
  var newRow = new List<string>(newHeader.Count);
  for (int i =0; i < header.Count; i++)
